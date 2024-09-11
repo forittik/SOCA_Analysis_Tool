@@ -200,7 +200,6 @@ def main():
     elif page == "Chapter Statistics":
         st.title("Chapter Statistics")
         chapter_statistics()
-)
     
 if __name__ == "__main__":
     main()
