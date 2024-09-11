@@ -7,8 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 # Set page config with a custom theme
 st.set_page_config(page_title="📊 Advanced Data Analysis App", layout="wide")
 
-
-# Set custom CSS styles for the Streamlit app
+# Custom CSS for advanced styling with improved text visibility
 st.markdown("""
     <style>
     .main {
@@ -24,9 +23,7 @@ st.markdown("""
         font-family: 'Segoe UI';
     }
     .stButton>button {
-        background-color: #007bff; 
-        color: #000000; 
-        border-radius: 5px;
+        background-color: #007bff; color: #000000; border-radius: 5px;
     }
     .stSelectbox>div>div>div {
         font-family: 'Segoe UI'; 
@@ -38,7 +35,7 @@ st.markdown("""
     }
     .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Optics"],
     .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Strength"] {
-        color: #FFFFFF !important;
+        color: #ffffff;
     }
     .stMarkdown {
         color: #000000;
@@ -62,28 +59,7 @@ st.markdown("""
         color: #000000;
     }
     </style>
-    """, unsafe_allow_html=True)
-
-# Sidebar content
-with st.sidebar:
-    st.header("Sidebar")
-    st.write("Sidebar content here.")
-
-# Main content
-st.title("Main Content")
-st.write("This is the main content section.")
-
-# Button in main content
-if st.button('Click Me'):
-    st.write("Button clicked!")
-
-# Dropdown (Selectbox)
-option = st.selectbox(
-    'Select an option:',
-    ['Option 1', 'Optics', 'Strength']
-)
-
-st.write(f'You selected: {option}')
+""", unsafe_allow_html=True)
 
 # Initialize session state
 if 'df' not in st.session_state:
