@@ -11,11 +11,11 @@ st.set_page_config(page_title="📊 Advanced Data Analysis App", layout="wide")
 st.markdown("""
     <style>
     .main {
-        background-color: #ff0000;
-        color: #999999;
+        background-color: #f0f2f6;
+        color: #000000;
     }
     .sidebar .sidebar-content {
-        background-color: #fff111;
+        background-color: #ffffff;
         color: #000000;
     }
     h1, h2, h3, h4 {
@@ -35,7 +35,7 @@ st.markdown("""
     }
     .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Optics"],
     .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Strength"] {
-        color: #000000;
+        color: #ffffff;
     }
     .stMarkdown {
         color: #000000;
