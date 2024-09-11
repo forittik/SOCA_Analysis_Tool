@@ -18,6 +18,13 @@ st.markdown("""
     .stSelectbox>div {font-family: 'Segoe UI'; font-size: 14px;}
     .css-1l02zno p {font-family: 'Segoe UI';}
     .css-2trqyj {background-color: #dbe4f0; border-radius: 10px;} /* Light blue background for boxes */
+    /* Custom style for highlighted sidebar title */
+    .css-1aumxhk h1 {
+        color: #FFD700; /* Gold color for highlight */
+        background-color: #333333; /* Dark background for contrast */
+        padding: 10px;
+        border-radius: 10px;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -25,9 +32,10 @@ st.markdown("""
 if 'df' not in st.session_state:
     st.session_state.df = pd.DataFrame()
 
-# Sidebar
-st.sidebar.title("📊 Navigation")
+# Sidebar with highlighted title
+st.sidebar.markdown("<h1>📊 Navigation</h1>", unsafe_allow_html=True)
 page = st.sidebar.radio("Go to", ["🏠 Upload Data", "📈 Performance Analysis", "🔍 Skills Analysis", "🔗 Correlation Analysis", "📚 Chapter Statistics"])
+
 
 # File upload
 def handle_upload():
