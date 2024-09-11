@@ -17,10 +17,10 @@ st.markdown("""
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        color: black; /* Change the text color to black for better contrast */
+        color: #000000; /* Change the text color to black for better contrast */
     }
     h1, h2, h3, h4 {
-        color: white; /* Keep headings white for contrast against the background */
+        color: #2C3E50; /* Darker color for headings */
         font-family: 'Segoe UI';
     }
     .sidebar .sidebar-content {
@@ -31,13 +31,16 @@ st.markdown("""
     }
     .stSelectbox>div {
         font-family: 'Segoe UI'; font-size: 14px;
+        color: #000000; /* Black color for dropdown text */
     }
     .css-1l02zno p {
         font-family: 'Segoe UI';
+        color: #000000; /* Ensure paragraph text is black */
     }
     .css-2trqyj {
         background-color: rgba(255, 255, 255, 0.8); /* Light, semi-transparent background for content boxes */
         border-radius: 10px;
+        color: #000000; /* Black text for content boxes */
     }
     </style>
 """, unsafe_allow_html=True)
@@ -80,22 +83,22 @@ def performance_analysis():
     
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.barplot(x='Test Chapter', y='Test Score', data=avg_score_by_chapter, palette='Spectral', ax=ax)
-    plt.title(f'Average Test Score by Chapter', fontsize=16, color='white')
-    plt.xlabel('Test Chapter', fontsize=14, color='white')
-    plt.ylabel('Average Test Score', fontsize=14, color='white')
-    plt.xticks(rotation=45, color='white')
-    plt.yticks(color='white')
+    plt.title(f'Average Test Score by Chapter', fontsize=16, color='black')
+    plt.xlabel('Test Chapter', fontsize=14, color='black')
+    plt.ylabel('Average Test Score', fontsize=14, color='black')
+    plt.xticks(rotation=45, color='black')
+    plt.yticks(color='black')
     st.pyplot(fig)
 
     # Score Distribution
     fig, ax = plt.subplots(figsize=(10, 6))
     test_scores = st.session_state.df[st.session_state.df['Test Chapter'] == chapter]['Test Score'].dropna().values
     plt.hist(test_scores, bins=10, edgecolor='black', color='#6b9ac4')
-    plt.title(f'Distribution of Test Scores for {chapter}', fontsize=16, color='white')
-    plt.xlabel('Test Score', fontsize=14, color='white')
-    plt.ylabel('Frequency', fontsize=14, color='white')
-    plt.xticks(color='white')
-    plt.yticks(color='white')
+    plt.title(f'Distribution of Test Scores for {chapter}', fontsize=16, color='black')
+    plt.xlabel('Test Score', fontsize=14, color='black')
+    plt.ylabel('Frequency', fontsize=14, color='black')
+    plt.xticks(color='black')
+    plt.yticks(color='black')
     st.pyplot(fig)
 
 # Skills Analysis
@@ -117,11 +120,11 @@ def skills_analysis():
 
     fig, ax = plt.subplots(figsize=(12, 8))
     sns.barplot(x='Frequency', y='Skill', data=skill_frequency, palette='Set3', ax=ax)
-    plt.title(f'Frequency of Skills for {chapter}', fontsize=16, color='white')
-    plt.xlabel('Frequency', fontsize=14, color='white')
-    plt.ylabel('Skill', fontsize=14, color='white')
-    plt.xticks(color='white')
-    plt.yticks(color='white')
+    plt.title(f'Frequency of Skills for {chapter}', fontsize=16, color='black')
+    plt.xlabel('Frequency', fontsize=14, color='black')
+    plt.ylabel('Skill', fontsize=14, color='black')
+    plt.xticks(color='black')
+    plt.yticks(color='black')
     st.pyplot(fig)
 
 # Correlation Analysis
@@ -147,9 +150,9 @@ def correlation_analysis():
 
     fig, ax = plt.subplots(figsize=(8, 6))
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, cbar=True, square=True, fmt=".2f", ax=ax)
-    plt.title(f"Correlation Heatmap for '{chapter}'", fontsize=16, color='white')
-    plt.xticks(color='white')
-    plt.yticks(color='white')
+    plt.title(f"Correlation Heatmap for '{chapter}'", fontsize=16, color='black')
+    plt.xticks(color='black')
+    plt.yticks(color='black')
     st.pyplot(fig)
 
     column_encoded = f"{column}_encoded"
@@ -178,17 +181,17 @@ def chapter_statistics():
 
     strength_scores = filtered_df.groupby('Strength')['Test Score'].mean()
     strength_scores.plot(kind='bar', ax=ax1, color='#6b9ac4')
-    ax1.set_title('Score Distribution by Strength', fontsize=14, color='white')
-    ax1.set_xlabel('Strength', fontsize=12, color='white')
-    ax1.set_ylabel('Avg Score', fontsize=12, color='white')
+    ax1.set_title('Score Distribution by Strength', fontsize=14, color='black')
+    ax1.set_xlabel('Strength', fontsize=12, color='black')
+    ax1.set_ylabel('Avg Score', fontsize=12, color='black')
 
     opportunity_scores = filtered_df.groupby('Opportunity')['Test Score'].mean()
     opportunity_scores.plot(kind='bar', ax=ax2, color='#a7c957')
-    ax2.set_title('Score Distribution by Opportunity', fontsize=14, color='white')
+    ax2.set_title('Score Distribution by Opportunity', fontsize=14, color='black')
 
     challenge_scores = filtered_df.groupby('Challenge')['Test Score'].mean()
     challenge_scores.plot(kind='bar', ax=ax3, color='#f77f00')
-    ax3.set_title('Score Distribution by Challenge', fontsize=14, color='white')
+    ax3.set_title('Score Distribution by Challenge', fontsize=14, color='black')
 
     plt.tight_layout()
     st.pyplot(fig)
