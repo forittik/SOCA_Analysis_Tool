@@ -4,129 +4,117 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-import io
+from io import StringIO
 
-# Initialize global variable for the dataframe
-df = pd.DataFrame()
+# Set page config
+st.set_page_config(page_title="Data Analysis App", layout="wide")
 
-# File uploader widget
-uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
+# Initialize session state
+if 'df' not in st.session_state:
+    st.session_state.df = pd.DataFrame()
 
-# Dropdowns and buttons
-chapter_dropdown_perf = st.selectbox('Performance Chapter:', [])
-chapter_dropdown_skills = st.selectbox('Skills Chapter:', [])
-chapter_dropdown_corr = st.selectbox('Correlation Chapter:', [])
-column_dropdown_corr = st.selectbox('Correlate with:', ['Strength_encoded', 'Opportunity_encoded', 'Challenge_encoded'])
+# Sidebar
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to", ["Upload Data", "Performance Analysis", "Skills Analysis", "Correlation Analysis"])
 
-if uploaded_file:
-    # Read the uploaded file into a DataFrame
-    df = pd.read_csv(uploaded_file)
+# File upload
+def handle_upload():
+    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+    if uploaded_file is not None:
+        df = pd.read_csv(uploaded_file)
+        df['Test Score'] = pd.to_numeric(df['Test Score'], errors='coerce')
+        st.session_state.df = df
+        st.success("Data loaded successfully!")
+        st.write(df.head())
 
-    # Ensure 'Test Score' is numeric
-    df['Test Score'] = pd.to_numeric(df['Test Score'], errors='coerce')
+# Performance Analysis
+def performance_analysis():
+    if st.session_state.df.empty:
+        st.warning("Please upload data first.")
+        return
+
+    chapter = st.selectbox("Select Test Chapter", options=st.session_state.df['Test Chapter'].unique())
     
-    # Update dropdown options
-    available_chapters = df['Test Chapter'].unique()
-    chapter_dropdown_perf = st.selectbox('Performance Chapter:', available_chapters)
-    chapter_dropdown_skills = st.selectbox('Skills Chapter:', available_chapters)
-    chapter_dropdown_corr = st.selectbox('Correlation Chapter:', available_chapters)
-    chapter_selector = st.selectbox('Test Chapter:', available_chapters)
+    avg_score_by_chapter = st.session_state.df.groupby('Test Chapter')['Test Score'].mean().reset_index()
+    
+    st.write(f"Performance Analysis for '{chapter}':")
+    st.write(avg_score_by_chapter[avg_score_by_chapter['Test Chapter'] == chapter])
+    
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.barplot(x='Test Chapter', y='Average Test Score', data=avg_score_by_chapter, palette='viridis', ax=ax)
+    plt.title(f'Average Test Score by Chapter')
+    plt.xlabel('Test Chapter')
+    plt.ylabel('Average Test Score')
+    plt.xticks(rotation=45)
+    st.pyplot(fig)
 
-    st.write("Data loaded successfully. Please select options from the dropdowns.")
+# Skills Analysis
+def skills_analysis():
+    if st.session_state.df.empty:
+        st.warning("Please upload data first.")
+        return
 
-    # Encode categorical columns for correlation analysis
+    chapter = st.selectbox("Select Test Chapter", options=st.session_state.df['Test Chapter'].unique())
+    
     label_encoder = LabelEncoder()
+    df = st.session_state.df.copy()
     df['Strength_encoded'] = label_encoder.fit_transform(df['Strength'].astype(str))
     df['Opportunity_encoded'] = label_encoder.fit_transform(df['Opportunity'].astype(str))
     df['Challenge_encoded'] = label_encoder.fit_transform(df['Challenge'].astype(str))
 
-    def perform_performance_analysis(chapter):
-        if chapter:
-            # Average Test Score by Chapter
-            avg_score_by_chapter = df.groupby('Test Chapter')['Test Score'].mean().reset_index()
-            avg_score_by_chapter.columns = ['Test Chapter', 'Average Test Score']
-            
-            st.write(f"\nPerformance Analysis for '{chapter}':")
-            st.write(avg_score_by_chapter[avg_score_by_chapter['Test Chapter'] == chapter])
-            
-            # Plot Average Test Score by Chapter
-            plt.figure(figsize=(10, 6))
-            sns.barplot(x='Test Chapter', y='Average Test Score', data=avg_score_by_chapter, palette='viridis')
-            plt.title(f'Average Test Score for {chapter}')
-            plt.xlabel('Test Chapter')
-            plt.ylabel('Average Test Score')
-            plt.xticks(rotation=45)
-            st.pyplot()
+    skill_frequency = pd.concat([df['Strength'], df['Opportunity'], df['Challenge']]).value_counts().reset_index()
+    skill_frequency.columns = ['Skill', 'Frequency']
+    
+    st.write(f"Skills Analysis for '{chapter}':")
+    st.write(skill_frequency)
+    
+    fig, ax = plt.subplots(figsize=(12, 8))
+    sns.barplot(x='Frequency', y='Skill', data=skill_frequency, palette='Set2', ax=ax)
+    plt.title(f'Frequency of Skills')
+    plt.xlabel('Frequency')
+    plt.ylabel('Skill')
+    st.pyplot(fig)
 
-    def perform_skills_analysis(chapter):
-        if chapter:
-            # Skill Frequency Analysis
-            skill_frequency = pd.concat([df['Strength'], df['Opportunity'], df['Challenge']]).value_counts().reset_index()
-            skill_frequency.columns = ['Skill', 'Frequency']
-            
-            st.write(f"\nSkills Analysis for '{chapter}':")
-            st.write(skill_frequency)
-            
-            # Plot Skill Frequency
-            plt.figure(figsize=(12, 8))
-            sns.barplot(x='Frequency', y='Skill', data=skill_frequency, palette='Set2')
-            plt.title(f'Frequency of Skills for {chapter}')
-            plt.xlabel('Frequency')
-            plt.ylabel('Skill')
-            st.pyplot()
+# Correlation Analysis
+def correlation_analysis():
+    if st.session_state.df.empty:
+        st.warning("Please upload data first.")
+        return
 
-    def display_correlation(chapter, column):
-        if chapter and column:
-            # Filter data for the selected chapter
-            df_filtered = df[df['Test Chapter'] == chapter].copy()
+    chapter = st.selectbox("Select Test Chapter", options=st.session_state.df['Test Chapter'].unique())
+    column = st.selectbox("Correlate with", options=['Strength_encoded', 'Opportunity_encoded', 'Challenge_encoded'])
+    
+    df_filtered = st.session_state.df[st.session_state.df['Test Chapter'] == chapter].copy()
+    
+    label_encoder = LabelEncoder()
+    df_filtered['Strength_encoded'] = label_encoder.fit_transform(df_filtered['Strength'].astype(str))
+    df_filtered['Opportunity_encoded'] = label_encoder.fit_transform(df_filtered['Opportunity'].astype(str))
+    df_filtered['Challenge_encoded'] = label_encoder.fit_transform(df_filtered['Challenge'].astype(str))
 
-            # Calculate correlation matrix
-            correlation_matrix = df_filtered[['Test Score', 'Strength_encoded', 'Opportunity_encoded', 'Challenge_encoded']].corr()
+    correlation_matrix = df_filtered[['Test Score', 'Strength_encoded', 'Opportunity_encoded', 'Challenge_encoded']].corr()
 
-            # Display the correlation matrix
-            st.write(f"Correlation matrix for '{chapter}':")
-            st.write(correlation_matrix)
-            
-            # Plot heatmap
-            plt.figure(figsize=(8, 6))
-            sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, cbar=True, square=True, fmt=".2f")
-            plt.title(f"Correlation Heatmap for '{chapter}'")
-            st.pyplot()
+    st.write(f"Correlation matrix for '{chapter}':")
+    st.write(correlation_matrix)
+    
+    fig, ax = plt.subplots(figsize=(8, 6))
+    sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, cbar=True, square=True, fmt=".2f", ax=ax)
+    plt.title(f"Correlation Heatmap for '{chapter}'")
+    st.pyplot(fig)
 
-    def update_analysis(chapter):
-        if 'Test Chapter' in df.columns:
-            # Filter data based on selected chapter
-            filtered_df = df[df['Test Chapter'] == chapter]
-            
-            # Display statistics
-            avg_score = filtered_df['Test Score'].mean()
-            num_entries = len(filtered_df)
-            st.write(f"**Statistics for {chapter}:**")
-            st.write(f"Average Test Score: {avg_score:.2f}")
-            st.write(f"Number of Entries: {num_entries}")
-            
-            # Plot score distribution by Strength
-            fig, axs = plt.subplots(1, 3, figsize=(18, 6))
-            strength_scores = filtered_df.groupby('Strength')['Test Score'].mean()
-            strength_scores.plot(kind='bar', ax=axs[0], title='Score Distribution by Strength', color='skyblue')
-            
-            # Plot score distribution by Opportunity
-            opportunity_scores = filtered_df.groupby('Opportunity')['Test Score'].mean()
-            opportunity_scores.plot(kind='bar', ax=axs[1], title='Score Distribution by Opportunity', color='lightgreen')
-            
-            # Plot score distribution by Challenge
-            challenge_scores = filtered_df.groupby('Challenge')['Test Score'].mean()
-            challenge_scores.plot(kind='bar', ax=axs[2], title='Score Distribution by Challenge', color='lightcoral')
-            
-            plt.tight_layout()
-            st.pyplot(fig)
+# Main app logic
+def main():
+    if page == "Upload Data":
+        st.title("Upload Data")
+        handle_upload()
+    elif page == "Performance Analysis":
+        st.title("Performance Analysis")
+        performance_analysis()
+    elif page == "Skills Analysis":
+        st.title("Skills Analysis")
+        skills_analysis()
+    elif page == "Correlation Analysis":
+        st.title("Correlation Analysis")
+        correlation_analysis()
 
-    # Add interactive elements for analysis
-    if chapter_dropdown_perf:
-        perform_performance_analysis(chapter_dropdown_perf)
-    if chapter_dropdown_skills:
-        perform_skills_analysis(chapter_dropdown_skills)
-    if chapter_dropdown_corr and column_dropdown_corr:
-        display_correlation(chapter_dropdown_corr, column_dropdown_corr)
-    if chapter_selector:
-        update_analysis(chapter_selector)
+if __name__ == "__main__":
+    main()
