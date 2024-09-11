@@ -35,7 +35,7 @@ st.markdown("""
     }
     .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Optics"],
     .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Strength"] {
-        color: #FFFFFF;
+        color: #FFFFFF !important;
     }
     .stMarkdown {
         color: #000000;
