@@ -12,7 +12,7 @@ st.markdown("""
     <style>
     .main {
         background-color: #f0f2f6;
-        color: #000000;
+        color: #f11110;
     }
     .sidebar .sidebar-content {
         background-color: #ffffff;
