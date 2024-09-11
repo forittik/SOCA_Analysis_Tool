@@ -10,54 +10,14 @@ st.set_page_config(page_title="📊 Advanced Data Analysis App", layout="wide")
 # Custom CSS for advanced styling with improved text visibility
 st.markdown("""
     <style>
-    .main {
-        background-color: #A3A3A3;
-        color: #000000;
-    }
-    .sidebar .sidebar-content {
-        background-color: #ffffff;
-        color: #000000;
-    }
-    h1, h2, h3, h4 {
-        color: #000000;
-        font-family: 'Segoe UI';
-    }
-    .stButton>button {
-        background-color: #6b9ac4; color: white; border-radius: 5px;
-    }
-    .stSelectbox>div>div>div {
-        font-family: 'Segoe UI'; 
-        font-size: 14px;
-        color: #000000;
-    }
-    .stSelectbox>div>div>div[data-baseweb="select"]>div {
-        color: #000000;
-    }
-    .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Optics"],
-    .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Strength"] {
-        color: #ffffff;
-    }
-    .stMarkdown {
-        color: #000000;
-    }
-    .stPlot {
-        background-color: #ffffff;
-    }
-    .streamlit-expanderHeader {
-        color: #000000;
-    }
-    label.css-mkogse.e16fv1kl2 {
-        color: #000000;
-    }
-    .stTextInput>div>div>input {
-        color: #000000;
-    }
-    .stTextInput>label {
-        color: #000000;
-    }
-    .stRadio>div {
-        color: #000000;
-    }
+    .main {background-color: #f5f5f5;}  /* Light gray background */
+    h1, h2, h3 {color: #333333; font-family: 'Segoe UI';}  /* Dark text for better contrast */
+    .css-1aumxhk {font-family: 'Segoe UI';}
+    .sidebar .sidebar-content {background-color: #fafafa;}
+    .stButton>button {background-color: #6b9ac4; color: white; border-radius: 5px;}
+    .stSelectbox>div {font-family: 'Segoe UI'; font-size: 14px;}
+    .css-1l02zno p {font-family: 'Segoe UI';}
+    .css-2trqyj {background-color: #dbe4f0; border-radius: 10px;} /* Light blue background for boxes */
     </style>
 """, unsafe_allow_html=True)
 
