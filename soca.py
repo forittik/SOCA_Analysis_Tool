@@ -197,9 +197,13 @@ def main():
     elif page == "Skills Analysis":
         st.title("Skills Analysis")
         skills_analysis()
+    elif page == "Correlation Analysis":
+        st.title("Correlation Analysis")
+        correlation_analysis()  # Added missing part
     elif page == "Chapter Statistics":
         st.title("Chapter Statistics")
         chapter_statistics()
     
 if __name__ == "__main__":
     main()
+
