@@ -23,7 +23,7 @@ st.markdown("""
         font-family: 'Segoe UI';
     }
     .stButton>button {
-        background-color: #007bff; color: #f11000; border-radius: 5px;
+        background-color: #007bff; color: #000000; border-radius: 5px;
     }
     .stSelectbox>div>div>div {
         font-family: 'Segoe UI'; 
