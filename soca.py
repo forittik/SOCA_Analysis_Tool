@@ -21,7 +21,7 @@ st.markdown("""
     /* Custom style for highlighted sidebar title */
     .css-1aumxhk h1 {
         color: #FFD700; /* Gold color for highlight */
-        background-color: #333333; /* Dark background for contrast */
+        background-color: #f11000; /* Dark background for contrast */
         padding: 10px;
         border-radius: 10px;
     }
