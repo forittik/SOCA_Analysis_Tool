@@ -11,7 +11,7 @@ st.set_page_config(page_title="📊 Advanced Data Analysis App", layout="wide")
 st.markdown("""
     <style>
     .main {
-        background-color: #333333;
+        background-color: #f0f2f6;
         color: #000000;
     }
     .sidebar .sidebar-content {
@@ -32,6 +32,10 @@ st.markdown("""
     }
     .stSelectbox>div>div>div[data-baseweb="select"]>div {
         color: #000000;
+    }
+    .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Optics"],
+    .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Strength"] {
+        color: #ffffff;
     }
     .stMarkdown {
         color: #000000;
@@ -57,7 +61,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# The rest of your code remains the same
 # Initialize session state
 if 'df' not in st.session_state:
     st.session_state.df = pd.DataFrame()
