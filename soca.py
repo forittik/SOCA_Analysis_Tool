@@ -19,19 +19,23 @@ st.markdown("""
         color: #000000;
     }
     h1, h2, h3, h4 {
-        color: #333333;
+        color: #000000;
         font-family: 'Segoe UI';
     }
     .stButton>button {
-        background-color: #007bff; color: white; border-radius: 5px;
+        background-color: #007bff; color: #000000; border-radius: 5px;
     }
     .stSelectbox>div>div>div {
         font-family: 'Segoe UI'; 
         font-size: 14px;
-        color: #333333;
+        color: #000000;
     }
     .stSelectbox>div>div>div[data-baseweb="select"]>div {
-        color: #333333;
+        color: #000000;
+    }
+    .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Optics"],
+    .stSelectbox>div>div>div[data-baseweb="select"]>div[data-option="Strength"] {
+        color: #ffffff;
     }
     .stMarkdown {
         color: #000000;
@@ -40,24 +44,23 @@ st.markdown("""
         background-color: #ffffff;
     }
     .streamlit-expanderHeader {
-        color: #333333;
+        color: #000000;
     }
     label.css-mkogse.e16fv1kl2 {
-        color: #333333;
+        color: #000000;
     }
     .stTextInput>div>div>input {
-        color: #333333;
+        color: #000000;
     }
     .stTextInput>label {
-        color: #333333;
+        color: #000000;
     }
     .stRadio>div {
-        color: #333333;
+        color: #000000;
     }
     </style>
 """, unsafe_allow_html=True)
 
-# The rest of your code remains the same
 # Initialize session state
 if 'df' not in st.session_state:
     st.session_state.df = pd.DataFrame()
@@ -176,8 +179,8 @@ def chapter_statistics():
     num_entries = len(filtered_df)
     
     st.markdown(f"## 📚 Chapter Statistics for '{chapter}'")
-    st.write(f"*Average Test Score:* {avg_score:.2f}")
-    st.write(f"*Number of Entries:* {num_entries}")
+    st.write(f"Average Test Score: {avg_score:.2f}")
+    st.write(f"Number of Entries: {num_entries}")
     
     # Plot score distribution by Strength, Opportunity, and Challenge
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(18, 6))
@@ -225,4 +228,4 @@ def main():
         chapter_statistics()
     
 if __name__ == "__main__":
-    main()
+    main()
