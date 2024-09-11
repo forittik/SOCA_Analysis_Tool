@@ -9,19 +9,17 @@ from io import StringIO
 # Set page config with a custom theme
 st.set_page_config(page_title="Enhanced Data Analysis App", layout="wide", initial_sidebar_state="expanded")
 
-# Custom CSS for style improvements
+# Custom CSS for style improvements, with a light background color
 st.markdown("""
     <style>
-    .main {background-color: #f0f2f6;}
-    h1 {color: #7a4a9e; font-family: 'Segoe UI';}
-    h2 {color: #694e93; font-family: 'Segoe UI';}
-    h3 {color: #5c4b8f; font-family: 'Segoe UI';}
+    .main {background-color: #f5f5f5;}  /* Light gray background */
+    h1, h2, h3 {color: #333333; font-family: 'Segoe UI';}  /* Dark text for better contrast */
     .css-1aumxhk {font-family: 'Segoe UI';}
-    .sidebar .sidebar-content {background-color: #faf8fc;}
-    .stButton>button {background-color: #9d79cb; color: white; border-radius: 5px;}
+    .sidebar .sidebar-content {background-color: #fafafa;}
+    .stButton>button {background-color: #6b9ac4; color: white; border-radius: 5px;}
     .stSelectbox>div {font-family: 'Segoe UI'; font-size: 14px;}
     .css-1l02zno p {font-family: 'Segoe UI';}
-    .css-2trqyj {background-color: #e3d5f0; border-radius: 10px;}
+    .css-2trqyj {background-color: #dbe4f0; border-radius: 10px;} /* Light blue background for boxes */
     </style>
 """, unsafe_allow_html=True)
 
@@ -63,7 +61,7 @@ def performance_analysis():
     
     fig, ax = plt.subplots(figsize=(10, 6))
     sns.barplot(x='Test Chapter', y='Test Score', data=avg_score_by_chapter, palette='Spectral', ax=ax)
-    plt.title(f'Average Test Score by Chapter', fontsize=16, color='#694e93')
+    plt.title(f'Average Test Score by Chapter', fontsize=16, color='#333333')
     plt.xlabel('Test Chapter', fontsize=14)
     plt.ylabel('Average Test Score', fontsize=14)
     plt.xticks(rotation=45)
@@ -72,8 +70,8 @@ def performance_analysis():
     # Score Distribution
     fig, ax = plt.subplots(figsize=(10, 6))
     test_scores = st.session_state.df[st.session_state.df['Test Chapter'] == chapter]['Test Score'].dropna().values
-    plt.hist(test_scores, bins=10, edgecolor='black', color='#9d79cb')
-    plt.title(f'Distribution of Test Scores for {chapter}', fontsize=16, color='#694e93')
+    plt.hist(test_scores, bins=10, edgecolor='black', color='#6b9ac4')
+    plt.title(f'Distribution of Test Scores for {chapter}', fontsize=16, color='#333333')
     plt.xlabel('Test Score', fontsize=14)
     plt.ylabel('Frequency', fontsize=14)
     st.pyplot(fig)
@@ -97,7 +95,7 @@ def skills_analysis():
 
     fig, ax = plt.subplots(figsize=(12, 8))
     sns.barplot(x='Frequency', y='Skill', data=skill_frequency, palette='Set3', ax=ax)
-    plt.title(f'Frequency of Skills for {chapter}', fontsize=16, color='#5c4b8f')
+    plt.title(f'Frequency of Skills for {chapter}', fontsize=16, color='#333333')
     plt.xlabel('Frequency', fontsize=14)
     plt.ylabel('Skill', fontsize=14)
     st.pyplot(fig)
@@ -125,7 +123,7 @@ def correlation_analysis():
 
     fig, ax = plt.subplots(figsize=(8, 6))
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, cbar=True, square=True, fmt=".2f", ax=ax)
-    plt.title(f"Correlation Heatmap for '{chapter}'", fontsize=16, color='#694e93')
+    plt.title(f"Correlation Heatmap for '{chapter}'", fontsize=16, color='#333333')
     st.pyplot(fig)
 
     column_encoded = f"{column}_encoded"
@@ -153,7 +151,7 @@ def chapter_statistics():
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(18, 6))
 
     strength_scores = filtered_df.groupby('Strength')['Test Score'].mean()
-    strength_scores.plot(kind='bar', ax=ax1, color='#9d79cb')
+    strength_scores.plot(kind='bar', ax=ax1, color='#6b9ac4')
     ax1.set_title('Score Distribution by Strength', fontsize=14)
     ax1.set_xlabel('Strength', fontsize=12)
     ax1.set_ylabel('Avg Score', fontsize=12)
