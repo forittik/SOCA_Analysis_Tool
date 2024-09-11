@@ -11,7 +11,7 @@ st.set_page_config(page_title="📊 Advanced Data Analysis App", layout="wide")
 st.markdown("""
     <style>
     .main {background-color: #F5B300;}  /* Light gray background */
-    h1, h2, h3 {color: #d1d1d1; font-family: 'Segoe UI';}  /* Dark text for better contrast */
+    h1, h2, h3 {color: #000000; font-family: 'Segoe UI';}  /* Dark text for better contrast */
     .css-1aumxhk {font-family: 'Segoe UI';}
     .sidebar .sidebar-content {background-color: #FFD770;}
     .stButton>button {background-color: #6b9ac4; color: white; border-radius: 5px;}
