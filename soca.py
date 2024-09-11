@@ -11,8 +11,8 @@ st.set_page_config(page_title="📊 Advanced Data Analysis App", layout="wide")
 st.markdown("""
     <style>
     .main {
-        background-color: #000000;
-        color: #444444;
+        background-color: #ff0000;
+        color: #999999;
     }
     .sidebar .sidebar-content {
         background-color: #ffffff;
