@@ -10,10 +10,10 @@ st.set_page_config(page_title="📊 Advanced Data Analysis App", layout="wide")
 # Custom CSS for advanced styling with improved text visibility
 st.markdown("""
     <style>
-    .main {background-color: #G5D5G5;}  /* Light gray background */
+    .main {background-color: #A9A9A9;}  /* Light gray background */
     h1, h2, h3 {color: #333333; font-family: 'Segoe UI';}  /* Dark text for better contrast */
     .css-1aumxhk {font-family: 'Segoe UI';}
-    .sidebar .sidebar-content {background-color: #000000;}
+    .sidebar .sidebar-content {background-color: #fafafa;}
     .stButton>button {background-color: #6b9ac4; color: white; border-radius: 5px;}
     .stSelectbox>div {font-family: 'Segoe UI'; font-size: 14px;}
     .css-1l02zno p {font-family: 'Segoe UI';}
