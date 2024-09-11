@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 # Set page config with a custom theme
 st.set_page_config(page_title="📊 Advanced Data Analysis App", layout="wide")
 
-# Custom CSS for advanced styling with improved text visibility
+# Custom CSS for advanced styling
 st.markdown("""
     <style>
     .main {
@@ -25,13 +25,9 @@ st.markdown("""
     .stButton>button {
         background-color: #007bff; color: white; border-radius: 5px;
     }
-    .stSelectbox>div>div>div {
-        font-family: 'Segoe UI'; 
-        font-size: 14px;
-        color: #333333;
-    }
-    .stSelectbox>div>div>div[data-baseweb="select"]>div {
-        color: #333333;
+    .stSelectbox>div {
+        font-family: 'Segoe UI'; font-size: 14px;
+        color: #000000;
     }
     .stMarkdown {
         color: #000000;
@@ -39,25 +35,9 @@ st.markdown("""
     .stPlot {
         background-color: #ffffff;
     }
-    .streamlit-expanderHeader {
-        color: #333333;
-    }
-    label.css-mkogse.e16fv1kl2 {
-        color: #333333;
-    }
-    .stTextInput>div>div>input {
-        color: #333333;
-    }
-    .stTextInput>label {
-        color: #333333;
-    }
-    .stRadio>div {
-        color: #333333;
-    }
     </style>
 """, unsafe_allow_html=True)
 
-# The rest of your code remains the same
 # Initialize session state
 if 'df' not in st.session_state:
     st.session_state.df = pd.DataFrame()
