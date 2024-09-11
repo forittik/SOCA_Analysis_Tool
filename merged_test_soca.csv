@@ -1,0 +1,469 @@
+Name,Test Chapter,Test Score,Timestamp_x,Strength,Opportunity,Challenge,Timestamp_y
+Mohan,Optics,32,2024-08-24 16:42:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Optics,32,2024-08-24 16:42:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Optics,32,2024-08-24 16:42:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Amit,Coordinate Geometry,20,2024-08-20 03:55:29.333078,Teamwork,Physical Health Management,Attention to Detail,2024-09-02 20:23:29.333078
+Amit,Coordinate Geometry,20,2024-08-20 03:55:29.333078,Emotional Skills,Technological Proficiency,Mental Skills,2024-08-25 09:31:29.333078
+Amit,Coordinate Geometry,20,2024-08-20 03:55:29.333078,Time Management,Leadership,Time Management,2024-08-22 07:43:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Mental Skills,Creativity,Motivation,2024-08-12 23:36:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Problem Solving,Physical Health Management,Time Management,2024-08-27 17:14:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Problem Solving,Creativity,Motivation,2024-09-07 16:19:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-08-20 23:36:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Test Taking Skills,Communication Skills,Motivation,2024-09-09 21:53:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Cognitive Skills,Communication Skills,Time Management,2024-09-07 00:18:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Test Taking Skills,Collaboration,Physical Health,2024-09-04 22:43:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Mental Skills,Technological Proficiency,Physical Health,2024-08-13 17:58:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Test Taking Skills,Leadership,Cognitive Skills,2024-08-22 13:42:29.333078
+Vikas,Mechanics,32,2024-08-17 13:28:29.333078,Problem Solving,Leadership,Time Management,2024-08-23 16:23:29.333078
+Mohan,Algebra,34,2024-09-06 04:54:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Algebra,34,2024-09-06 04:54:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Algebra,34,2024-09-06 04:54:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Suman,Coordinate Geometry,31,2024-08-22 01:27:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-03 21:05:29.333078
+Suman,Coordinate Geometry,31,2024-08-22 01:27:29.333078,Teamwork,Physical Health Management,Physical Health,2024-08-16 10:55:29.333078
+Suman,Coordinate Geometry,31,2024-08-22 01:27:29.333078,Time Management,Leadership,Mental Skills,2024-08-20 19:07:29.333078
+Arjun,Thermodynamics,40,2024-08-24 19:48:29.333078,Cognitive Skills,Collaboration,Time Management,2024-09-02 16:29:29.333078
+Arjun,Thermodynamics,40,2024-08-24 19:48:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-12 19:33:29.333078
+Arjun,Thermodynamics,40,2024-08-24 19:48:29.333078,Time Management,Creativity,Physical Health,2024-08-23 13:53:29.333078
+Pranav,Calculus,27,2024-09-05 03:47:29.333078,Time Management,Collaboration,Cognitive Skills,2024-08-25 17:43:29.333078
+Pranav,Calculus,27,2024-09-05 03:47:29.333078,Emotional Skills,Physical Health Management,Physical Health,2024-08-16 11:57:29.333078
+Pranav,Calculus,27,2024-09-05 03:47:29.333078,Time Management,Collaboration,Attention to Detail,2024-09-11 10:02:29.333078
+Pranav,Calculus,27,2024-09-05 03:47:29.333078,Emotional Skills,Leadership,Time Management,2024-08-24 18:31:29.333078
+Pranav,Calculus,27,2024-09-05 03:47:29.333078,Test Taking Skills,Physical Health Management,Time Management,2024-08-18 02:58:29.333078
+Pranav,Calculus,27,2024-09-05 03:47:29.333078,Emotional Skills,Physical Health Management,Attention to Detail,2024-09-07 05:18:29.333078
+Pranav,Calculus,27,2024-09-05 03:47:29.333078,Teamwork,Collaboration,Attention to Detail,2024-08-26 15:54:29.333078
+Pranav,Calculus,27,2024-09-05 03:47:29.333078,Teamwork,Communication Skills,Attention to Detail,2024-08-14 18:31:29.333078
+Pranav,Calculus,27,2024-09-05 03:47:29.333078,Problem Solving,Physical Health Management,Attention to Detail,2024-08-31 06:41:29.333078
+Sneha,Algebra,30,2024-08-15 03:20:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-15 04:04:29.333078
+Sneha,Algebra,30,2024-08-15 03:20:29.333078,Emotional Skills,Leadership,Mental Skills,2024-08-28 18:52:29.333078
+Sneha,Algebra,30,2024-08-15 03:20:29.333078,Emotional Skills,Physical Health Management,Time Management,2024-08-25 16:40:29.333078
+Sneha,Algebra,30,2024-08-15 03:20:29.333078,Problem Solving,Physical Health Management,Mental Skills,2024-09-02 19:31:29.333078
+Sneha,Algebra,30,2024-08-15 03:20:29.333078,Mental Skills,Creativity,Mental Skills,2024-09-11 22:44:29.333078
+Sneha,Algebra,30,2024-08-15 03:20:29.333078,Test Taking Skills,Technological Proficiency,Mental Skills,2024-09-11 16:53:29.333078
+Neha,Organic Chemistry,33,2024-08-30 23:25:29.333078,Teamwork,Technological Proficiency,Physical Health,2024-09-11 13:30:29.333078
+Neha,Organic Chemistry,33,2024-08-30 23:25:29.333078,Test Taking Skills,Communication Skills,Time Management,2024-08-31 23:24:29.333078
+Pranav,Mechanics,25,2024-09-02 18:41:29.333078,Time Management,Collaboration,Cognitive Skills,2024-08-25 17:43:29.333078
+Pranav,Mechanics,25,2024-09-02 18:41:29.333078,Emotional Skills,Physical Health Management,Physical Health,2024-08-16 11:57:29.333078
+Pranav,Mechanics,25,2024-09-02 18:41:29.333078,Time Management,Collaboration,Attention to Detail,2024-09-11 10:02:29.333078
+Pranav,Mechanics,25,2024-09-02 18:41:29.333078,Emotional Skills,Leadership,Time Management,2024-08-24 18:31:29.333078
+Pranav,Mechanics,25,2024-09-02 18:41:29.333078,Test Taking Skills,Physical Health Management,Time Management,2024-08-18 02:58:29.333078
+Pranav,Mechanics,25,2024-09-02 18:41:29.333078,Emotional Skills,Physical Health Management,Attention to Detail,2024-09-07 05:18:29.333078
+Pranav,Mechanics,25,2024-09-02 18:41:29.333078,Teamwork,Collaboration,Attention to Detail,2024-08-26 15:54:29.333078
+Pranav,Mechanics,25,2024-09-02 18:41:29.333078,Teamwork,Communication Skills,Attention to Detail,2024-08-14 18:31:29.333078
+Pranav,Mechanics,25,2024-09-02 18:41:29.333078,Problem Solving,Physical Health Management,Attention to Detail,2024-08-31 06:41:29.333078
+Sunita,Optics,21,2024-08-22 06:40:29.333078,Time Management,Communication Skills,Cognitive Skills,2024-09-11 14:26:29.333078
+Sunita,Optics,21,2024-08-22 06:40:29.333078,Teamwork,Communication Skills,Time Management,2024-09-06 18:24:29.333078
+Sunita,Optics,21,2024-08-22 06:40:29.333078,Problem Solving,Technological Proficiency,Cognitive Skills,2024-08-16 01:31:29.333078
+Sunita,Optics,21,2024-08-22 06:40:29.333078,Time Management,Leadership,Physical Health,2024-09-02 20:31:29.333078
+Sunita,Optics,21,2024-08-22 06:40:29.333078,Problem Solving,Technological Proficiency,Physical Health,2024-08-29 19:26:29.333078
+Sunita,Optics,21,2024-08-22 06:40:29.333078,Time Management,Technological Proficiency,Physical Health,2024-08-23 10:01:29.333078
+Sunita,Optics,21,2024-08-22 06:40:29.333078,Analytical Skills,Communication Skills,Time Management,2024-08-26 05:56:29.333078
+Mohan,Probability,35,2024-09-05 14:15:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Probability,35,2024-09-05 14:15:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Probability,35,2024-09-05 14:15:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Mohan,Modern Physics,25,2024-08-30 07:53:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Modern Physics,25,2024-08-30 07:53:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Modern Physics,25,2024-08-30 07:53:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Ankit,Electrostatics,31,2024-08-27 08:45:29.333078,Cognitive Skills,Technological Proficiency,Mental Skills,2024-08-24 21:54:29.333078
+Ankit,Electrostatics,31,2024-08-27 08:45:29.333078,Problem Solving,Technological Proficiency,Physical Health,2024-08-17 04:31:29.333078
+Ankit,Electrostatics,31,2024-08-27 08:45:29.333078,Mental Skills,Leadership,Mental Skills,2024-08-16 08:58:29.333078
+Ankit,Electrostatics,31,2024-08-27 08:45:29.333078,Cognitive Skills,Physical Health Management,Time Management,2024-08-23 00:15:29.333078
+Ankit,Electrostatics,31,2024-08-27 08:45:29.333078,Problem Solving,Leadership,Physical Health,2024-08-19 20:10:29.333078
+Ankit,Electrostatics,31,2024-08-27 08:45:29.333078,Analytical Skills,Collaboration,Time Management,2024-08-13 23:14:29.333078
+Ravi,Electrostatics,38,2024-08-26 03:00:29.333078,Time Management,Creativity,Time Management,2024-08-29 00:57:29.333078
+Ravi,Electrostatics,38,2024-08-26 03:00:29.333078,Mental Skills,Creativity,Mental Skills,2024-08-12 23:03:29.333078
+Ravi,Electrostatics,38,2024-08-26 03:00:29.333078,Time Management,Communication Skills,Attention to Detail,2024-08-25 22:21:29.333078
+Divya,Coordinate Geometry,34,2024-09-11 05:40:29.333078,Analytical Skills,Communication Skills,Cognitive Skills,2024-08-22 03:55:29.333078
+Divya,Coordinate Geometry,34,2024-09-11 05:40:29.333078,Mental Skills,Physical Health Management,Motivation,2024-08-18 06:02:29.333078
+Pranav,Modern Physics,32,2024-09-03 04:56:29.333078,Time Management,Collaboration,Cognitive Skills,2024-08-25 17:43:29.333078
+Pranav,Modern Physics,32,2024-09-03 04:56:29.333078,Emotional Skills,Physical Health Management,Physical Health,2024-08-16 11:57:29.333078
+Pranav,Modern Physics,32,2024-09-03 04:56:29.333078,Time Management,Collaboration,Attention to Detail,2024-09-11 10:02:29.333078
+Pranav,Modern Physics,32,2024-09-03 04:56:29.333078,Emotional Skills,Leadership,Time Management,2024-08-24 18:31:29.333078
+Pranav,Modern Physics,32,2024-09-03 04:56:29.333078,Test Taking Skills,Physical Health Management,Time Management,2024-08-18 02:58:29.333078
+Pranav,Modern Physics,32,2024-09-03 04:56:29.333078,Emotional Skills,Physical Health Management,Attention to Detail,2024-09-07 05:18:29.333078
+Pranav,Modern Physics,32,2024-09-03 04:56:29.333078,Teamwork,Collaboration,Attention to Detail,2024-08-26 15:54:29.333078
+Pranav,Modern Physics,32,2024-09-03 04:56:29.333078,Teamwork,Communication Skills,Attention to Detail,2024-08-14 18:31:29.333078
+Pranav,Modern Physics,32,2024-09-03 04:56:29.333078,Problem Solving,Physical Health Management,Attention to Detail,2024-08-31 06:41:29.333078
+Mohan,Calculus,38,2024-08-31 03:09:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Calculus,38,2024-08-31 03:09:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Calculus,38,2024-08-31 03:09:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Sneha,Modern Physics,34,2024-08-29 05:23:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-15 04:04:29.333078
+Sneha,Modern Physics,34,2024-08-29 05:23:29.333078,Emotional Skills,Leadership,Mental Skills,2024-08-28 18:52:29.333078
+Sneha,Modern Physics,34,2024-08-29 05:23:29.333078,Emotional Skills,Physical Health Management,Time Management,2024-08-25 16:40:29.333078
+Sneha,Modern Physics,34,2024-08-29 05:23:29.333078,Problem Solving,Physical Health Management,Mental Skills,2024-09-02 19:31:29.333078
+Sneha,Modern Physics,34,2024-08-29 05:23:29.333078,Mental Skills,Creativity,Mental Skills,2024-09-11 22:44:29.333078
+Sneha,Modern Physics,34,2024-08-29 05:23:29.333078,Test Taking Skills,Technological Proficiency,Mental Skills,2024-09-11 16:53:29.333078
+Nikhil,Organic Chemistry,37,2024-08-16 19:27:29.333078,Analytical Skills,Technological Proficiency,Motivation,2024-09-07 09:21:29.333078
+Nikhil,Organic Chemistry,37,2024-08-16 19:27:29.333078,Emotional Skills,Collaboration,Physical Health,2024-08-26 21:32:29.333078
+Nikhil,Organic Chemistry,37,2024-08-16 19:27:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-01 12:54:29.333078
+Nikhil,Organic Chemistry,37,2024-08-16 19:27:29.333078,Teamwork,Communication Skills,Cognitive Skills,2024-08-18 16:59:29.333078
+Nikhil,Organic Chemistry,37,2024-08-16 19:27:29.333078,Emotional Skills,Leadership,Motivation,2024-08-25 06:07:29.333078
+Swati,Coordinate Geometry,33,2024-08-13 07:30:29.333078,Emotional Skills,Leadership,Physical Health,2024-08-23 15:30:29.333078
+Swati,Coordinate Geometry,33,2024-08-13 07:30:29.333078,Test Taking Skills,Leadership,Cognitive Skills,2024-09-11 17:02:29.333078
+Swati,Coordinate Geometry,33,2024-08-13 07:30:29.333078,Time Management,Technological Proficiency,Time Management,2024-08-23 01:47:29.333078
+Swati,Coordinate Geometry,33,2024-08-13 07:30:29.333078,Problem Solving,Creativity,Motivation,2024-08-22 20:18:29.333078
+Swati,Coordinate Geometry,33,2024-08-13 07:30:29.333078,Cognitive Skills,Collaboration,Mental Skills,2024-08-19 21:55:29.333078
+Swati,Coordinate Geometry,33,2024-08-13 07:30:29.333078,Cognitive Skills,Technological Proficiency,Mental Skills,2024-09-02 20:16:29.333078
+Priya,Probability,26,2024-08-19 07:20:29.333078,Emotional Skills,Communication Skills,Mental Skills,2024-08-22 17:38:29.333078
+Priya,Probability,26,2024-08-19 07:20:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-09-02 03:41:29.333078
+Priya,Probability,26,2024-08-19 07:20:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-09-10 21:30:29.333078
+Priya,Probability,26,2024-08-19 07:20:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-21 05:57:29.333078
+Mohan,Thermodynamics,28,2024-09-10 21:13:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Thermodynamics,28,2024-09-10 21:13:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Thermodynamics,28,2024-09-10 21:13:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Ankit,Electrostatics,25,2024-09-08 12:31:29.333078,Cognitive Skills,Technological Proficiency,Mental Skills,2024-08-24 21:54:29.333078
+Ankit,Electrostatics,25,2024-09-08 12:31:29.333078,Problem Solving,Technological Proficiency,Physical Health,2024-08-17 04:31:29.333078
+Ankit,Electrostatics,25,2024-09-08 12:31:29.333078,Mental Skills,Leadership,Mental Skills,2024-08-16 08:58:29.333078
+Ankit,Electrostatics,25,2024-09-08 12:31:29.333078,Cognitive Skills,Physical Health Management,Time Management,2024-08-23 00:15:29.333078
+Ankit,Electrostatics,25,2024-09-08 12:31:29.333078,Problem Solving,Leadership,Physical Health,2024-08-19 20:10:29.333078
+Ankit,Electrostatics,25,2024-09-08 12:31:29.333078,Analytical Skills,Collaboration,Time Management,2024-08-13 23:14:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-06 08:03:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Mental Skills,Communication Skills,Physical Health,2024-09-06 18:29:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Teamwork,Leadership,Physical Health,2024-09-06 15:49:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Test Taking Skills,Creativity,Motivation,2024-09-11 10:24:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Analytical Skills,Collaboration,Motivation,2024-08-31 08:37:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Cognitive Skills,Physical Health Management,Physical Health,2024-09-11 12:32:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Time Management,Leadership,Motivation,2024-09-05 19:21:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Test Taking Skills,Technological Proficiency,Physical Health,2024-08-25 02:49:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Emotional Skills,Physical Health Management,Cognitive Skills,2024-08-24 20:59:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-18 06:00:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Test Taking Skills,Technological Proficiency,Attention to Detail,2024-09-04 21:05:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Problem Solving,Creativity,Mental Skills,2024-09-10 02:29:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Mental Skills,Communication Skills,Physical Health,2024-08-26 08:35:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Problem Solving,Technological Proficiency,Motivation,2024-08-14 15:57:29.333078
+Rohit,Modern Physics,29,2024-09-01 15:47:29.333078,Time Management,Creativity,Mental Skills,2024-08-20 09:16:29.333078
+Megha,Coordinate Geometry,39,2024-08-21 07:19:29.333078,Cognitive Skills,Leadership,Time Management,2024-09-01 21:15:29.333078
+Megha,Coordinate Geometry,39,2024-08-21 07:19:29.333078,Mental Skills,Communication Skills,Mental Skills,2024-09-08 02:16:29.333078
+Megha,Coordinate Geometry,39,2024-08-21 07:19:29.333078,Analytical Skills,Communication Skills,Time Management,2024-09-10 02:21:29.333078
+Megha,Coordinate Geometry,39,2024-08-21 07:19:29.333078,Test Taking Skills,Creativity,Attention to Detail,2024-09-03 05:21:29.333078
+Megha,Coordinate Geometry,39,2024-08-21 07:19:29.333078,Mental Skills,Technological Proficiency,Motivation,2024-09-11 09:57:29.333078
+Neha,Optics,25,2024-08-29 06:55:29.333078,Teamwork,Technological Proficiency,Physical Health,2024-09-11 13:30:29.333078
+Neha,Optics,25,2024-08-29 06:55:29.333078,Test Taking Skills,Communication Skills,Time Management,2024-08-31 23:24:29.333078
+Sneha,Organic Chemistry,28,2024-09-11 03:22:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-15 04:04:29.333078
+Sneha,Organic Chemistry,28,2024-09-11 03:22:29.333078,Emotional Skills,Leadership,Mental Skills,2024-08-28 18:52:29.333078
+Sneha,Organic Chemistry,28,2024-09-11 03:22:29.333078,Emotional Skills,Physical Health Management,Time Management,2024-08-25 16:40:29.333078
+Sneha,Organic Chemistry,28,2024-09-11 03:22:29.333078,Problem Solving,Physical Health Management,Mental Skills,2024-09-02 19:31:29.333078
+Sneha,Organic Chemistry,28,2024-09-11 03:22:29.333078,Mental Skills,Creativity,Mental Skills,2024-09-11 22:44:29.333078
+Sneha,Organic Chemistry,28,2024-09-11 03:22:29.333078,Test Taking Skills,Technological Proficiency,Mental Skills,2024-09-11 16:53:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Mental Skills,Creativity,Motivation,2024-08-12 23:36:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Problem Solving,Physical Health Management,Time Management,2024-08-27 17:14:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Problem Solving,Creativity,Motivation,2024-09-07 16:19:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-08-20 23:36:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Test Taking Skills,Communication Skills,Motivation,2024-09-09 21:53:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Cognitive Skills,Communication Skills,Time Management,2024-09-07 00:18:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Test Taking Skills,Collaboration,Physical Health,2024-09-04 22:43:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Mental Skills,Technological Proficiency,Physical Health,2024-08-13 17:58:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Test Taking Skills,Leadership,Cognitive Skills,2024-08-22 13:42:29.333078
+Vikas,Organic Chemistry,26,2024-09-01 23:24:29.333078,Problem Solving,Leadership,Time Management,2024-08-23 16:23:29.333078
+Suman,Calculus,27,2024-09-09 00:55:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-03 21:05:29.333078
+Suman,Calculus,27,2024-09-09 00:55:29.333078,Teamwork,Physical Health Management,Physical Health,2024-08-16 10:55:29.333078
+Suman,Calculus,27,2024-09-09 00:55:29.333078,Time Management,Leadership,Mental Skills,2024-08-20 19:07:29.333078
+Ankit,Mechanics,24,2024-08-13 06:33:29.333078,Cognitive Skills,Technological Proficiency,Mental Skills,2024-08-24 21:54:29.333078
+Ankit,Mechanics,24,2024-08-13 06:33:29.333078,Problem Solving,Technological Proficiency,Physical Health,2024-08-17 04:31:29.333078
+Ankit,Mechanics,24,2024-08-13 06:33:29.333078,Mental Skills,Leadership,Mental Skills,2024-08-16 08:58:29.333078
+Ankit,Mechanics,24,2024-08-13 06:33:29.333078,Cognitive Skills,Physical Health Management,Time Management,2024-08-23 00:15:29.333078
+Ankit,Mechanics,24,2024-08-13 06:33:29.333078,Problem Solving,Leadership,Physical Health,2024-08-19 20:10:29.333078
+Ankit,Mechanics,24,2024-08-13 06:33:29.333078,Analytical Skills,Collaboration,Time Management,2024-08-13 23:14:29.333078
+Megha,Calculus,26,2024-08-26 12:28:29.333078,Cognitive Skills,Leadership,Time Management,2024-09-01 21:15:29.333078
+Megha,Calculus,26,2024-08-26 12:28:29.333078,Mental Skills,Communication Skills,Mental Skills,2024-09-08 02:16:29.333078
+Megha,Calculus,26,2024-08-26 12:28:29.333078,Analytical Skills,Communication Skills,Time Management,2024-09-10 02:21:29.333078
+Megha,Calculus,26,2024-08-26 12:28:29.333078,Test Taking Skills,Creativity,Attention to Detail,2024-09-03 05:21:29.333078
+Megha,Calculus,26,2024-08-26 12:28:29.333078,Mental Skills,Technological Proficiency,Motivation,2024-09-11 09:57:29.333078
+Megha,Coordinate Geometry,21,2024-08-19 04:50:29.333078,Cognitive Skills,Leadership,Time Management,2024-09-01 21:15:29.333078
+Megha,Coordinate Geometry,21,2024-08-19 04:50:29.333078,Mental Skills,Communication Skills,Mental Skills,2024-09-08 02:16:29.333078
+Megha,Coordinate Geometry,21,2024-08-19 04:50:29.333078,Analytical Skills,Communication Skills,Time Management,2024-09-10 02:21:29.333078
+Megha,Coordinate Geometry,21,2024-08-19 04:50:29.333078,Test Taking Skills,Creativity,Attention to Detail,2024-09-03 05:21:29.333078
+Megha,Coordinate Geometry,21,2024-08-19 04:50:29.333078,Mental Skills,Technological Proficiency,Motivation,2024-09-11 09:57:29.333078
+Divya,Mechanics,32,2024-09-09 04:46:29.333078,Analytical Skills,Communication Skills,Cognitive Skills,2024-08-22 03:55:29.333078
+Divya,Mechanics,32,2024-09-09 04:46:29.333078,Mental Skills,Physical Health Management,Motivation,2024-08-18 06:02:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Mental Skills,Creativity,Motivation,2024-08-12 23:36:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Problem Solving,Physical Health Management,Time Management,2024-08-27 17:14:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Problem Solving,Creativity,Motivation,2024-09-07 16:19:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-08-20 23:36:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Test Taking Skills,Communication Skills,Motivation,2024-09-09 21:53:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Cognitive Skills,Communication Skills,Time Management,2024-09-07 00:18:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Test Taking Skills,Collaboration,Physical Health,2024-09-04 22:43:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Mental Skills,Technological Proficiency,Physical Health,2024-08-13 17:58:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Test Taking Skills,Leadership,Cognitive Skills,2024-08-22 13:42:29.333078
+Vikas,Organic Chemistry,31,2024-08-26 05:03:29.333078,Problem Solving,Leadership,Time Management,2024-08-23 16:23:29.333078
+Priya,Coordinate Geometry,38,2024-09-11 14:41:29.333078,Emotional Skills,Communication Skills,Mental Skills,2024-08-22 17:38:29.333078
+Priya,Coordinate Geometry,38,2024-09-11 14:41:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-09-02 03:41:29.333078
+Priya,Coordinate Geometry,38,2024-09-11 14:41:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-09-10 21:30:29.333078
+Priya,Coordinate Geometry,38,2024-09-11 14:41:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-21 05:57:29.333078
+Mohan,Electrostatics,25,2024-08-22 15:06:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Electrostatics,25,2024-08-22 15:06:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Electrostatics,25,2024-08-22 15:06:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Swati,Organic Chemistry,30,2024-09-05 05:02:29.333078,Emotional Skills,Leadership,Physical Health,2024-08-23 15:30:29.333078
+Swati,Organic Chemistry,30,2024-09-05 05:02:29.333078,Test Taking Skills,Leadership,Cognitive Skills,2024-09-11 17:02:29.333078
+Swati,Organic Chemistry,30,2024-09-05 05:02:29.333078,Time Management,Technological Proficiency,Time Management,2024-08-23 01:47:29.333078
+Swati,Organic Chemistry,30,2024-09-05 05:02:29.333078,Problem Solving,Creativity,Motivation,2024-08-22 20:18:29.333078
+Swati,Organic Chemistry,30,2024-09-05 05:02:29.333078,Cognitive Skills,Collaboration,Mental Skills,2024-08-19 21:55:29.333078
+Swati,Organic Chemistry,30,2024-09-05 05:02:29.333078,Cognitive Skills,Technological Proficiency,Mental Skills,2024-09-02 20:16:29.333078
+Megha,Probability,39,2024-09-05 00:36:29.333078,Cognitive Skills,Leadership,Time Management,2024-09-01 21:15:29.333078
+Megha,Probability,39,2024-09-05 00:36:29.333078,Mental Skills,Communication Skills,Mental Skills,2024-09-08 02:16:29.333078
+Megha,Probability,39,2024-09-05 00:36:29.333078,Analytical Skills,Communication Skills,Time Management,2024-09-10 02:21:29.333078
+Megha,Probability,39,2024-09-05 00:36:29.333078,Test Taking Skills,Creativity,Attention to Detail,2024-09-03 05:21:29.333078
+Megha,Probability,39,2024-09-05 00:36:29.333078,Mental Skills,Technological Proficiency,Motivation,2024-09-11 09:57:29.333078
+Sneha,Coordinate Geometry,29,2024-09-02 05:48:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-15 04:04:29.333078
+Sneha,Coordinate Geometry,29,2024-09-02 05:48:29.333078,Emotional Skills,Leadership,Mental Skills,2024-08-28 18:52:29.333078
+Sneha,Coordinate Geometry,29,2024-09-02 05:48:29.333078,Emotional Skills,Physical Health Management,Time Management,2024-08-25 16:40:29.333078
+Sneha,Coordinate Geometry,29,2024-09-02 05:48:29.333078,Problem Solving,Physical Health Management,Mental Skills,2024-09-02 19:31:29.333078
+Sneha,Coordinate Geometry,29,2024-09-02 05:48:29.333078,Mental Skills,Creativity,Mental Skills,2024-09-11 22:44:29.333078
+Sneha,Coordinate Geometry,29,2024-09-02 05:48:29.333078,Test Taking Skills,Technological Proficiency,Mental Skills,2024-09-11 16:53:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-06 08:03:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Mental Skills,Communication Skills,Physical Health,2024-09-06 18:29:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Teamwork,Leadership,Physical Health,2024-09-06 15:49:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Test Taking Skills,Creativity,Motivation,2024-09-11 10:24:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Analytical Skills,Collaboration,Motivation,2024-08-31 08:37:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Cognitive Skills,Physical Health Management,Physical Health,2024-09-11 12:32:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Time Management,Leadership,Motivation,2024-09-05 19:21:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Test Taking Skills,Technological Proficiency,Physical Health,2024-08-25 02:49:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Emotional Skills,Physical Health Management,Cognitive Skills,2024-08-24 20:59:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-18 06:00:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Test Taking Skills,Technological Proficiency,Attention to Detail,2024-09-04 21:05:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Problem Solving,Creativity,Mental Skills,2024-09-10 02:29:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Mental Skills,Communication Skills,Physical Health,2024-08-26 08:35:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Problem Solving,Technological Proficiency,Motivation,2024-08-14 15:57:29.333078
+Rohit,Optics,27,2024-08-28 07:39:29.333078,Time Management,Creativity,Mental Skills,2024-08-20 09:16:29.333078
+Arjun,Coordinate Geometry,40,2024-08-24 11:00:29.333078,Cognitive Skills,Collaboration,Time Management,2024-09-02 16:29:29.333078
+Arjun,Coordinate Geometry,40,2024-08-24 11:00:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-12 19:33:29.333078
+Arjun,Coordinate Geometry,40,2024-08-24 11:00:29.333078,Time Management,Creativity,Physical Health,2024-08-23 13:53:29.333078
+Sneha,Organic Chemistry,38,2024-08-29 06:06:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-15 04:04:29.333078
+Sneha,Organic Chemistry,38,2024-08-29 06:06:29.333078,Emotional Skills,Leadership,Mental Skills,2024-08-28 18:52:29.333078
+Sneha,Organic Chemistry,38,2024-08-29 06:06:29.333078,Emotional Skills,Physical Health Management,Time Management,2024-08-25 16:40:29.333078
+Sneha,Organic Chemistry,38,2024-08-29 06:06:29.333078,Problem Solving,Physical Health Management,Mental Skills,2024-09-02 19:31:29.333078
+Sneha,Organic Chemistry,38,2024-08-29 06:06:29.333078,Mental Skills,Creativity,Mental Skills,2024-09-11 22:44:29.333078
+Sneha,Organic Chemistry,38,2024-08-29 06:06:29.333078,Test Taking Skills,Technological Proficiency,Mental Skills,2024-09-11 16:53:29.333078
+Priya,Probability,39,2024-08-28 12:56:29.333078,Emotional Skills,Communication Skills,Mental Skills,2024-08-22 17:38:29.333078
+Priya,Probability,39,2024-08-28 12:56:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-09-02 03:41:29.333078
+Priya,Probability,39,2024-08-28 12:56:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-09-10 21:30:29.333078
+Priya,Probability,39,2024-08-28 12:56:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-21 05:57:29.333078
+Suman,Coordinate Geometry,25,2024-09-05 18:24:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-03 21:05:29.333078
+Suman,Coordinate Geometry,25,2024-09-05 18:24:29.333078,Teamwork,Physical Health Management,Physical Health,2024-08-16 10:55:29.333078
+Suman,Coordinate Geometry,25,2024-09-05 18:24:29.333078,Time Management,Leadership,Mental Skills,2024-08-20 19:07:29.333078
+Ankit,Algebra,22,2024-08-28 15:51:29.333078,Cognitive Skills,Technological Proficiency,Mental Skills,2024-08-24 21:54:29.333078
+Ankit,Algebra,22,2024-08-28 15:51:29.333078,Problem Solving,Technological Proficiency,Physical Health,2024-08-17 04:31:29.333078
+Ankit,Algebra,22,2024-08-28 15:51:29.333078,Mental Skills,Leadership,Mental Skills,2024-08-16 08:58:29.333078
+Ankit,Algebra,22,2024-08-28 15:51:29.333078,Cognitive Skills,Physical Health Management,Time Management,2024-08-23 00:15:29.333078
+Ankit,Algebra,22,2024-08-28 15:51:29.333078,Problem Solving,Leadership,Physical Health,2024-08-19 20:10:29.333078
+Ankit,Algebra,22,2024-08-28 15:51:29.333078,Analytical Skills,Collaboration,Time Management,2024-08-13 23:14:29.333078
+Amit,Calculus,24,2024-08-22 15:43:29.333078,Teamwork,Physical Health Management,Attention to Detail,2024-09-02 20:23:29.333078
+Amit,Calculus,24,2024-08-22 15:43:29.333078,Emotional Skills,Technological Proficiency,Mental Skills,2024-08-25 09:31:29.333078
+Amit,Calculus,24,2024-08-22 15:43:29.333078,Time Management,Leadership,Time Management,2024-08-22 07:43:29.333078
+Priya,Probability,36,2024-08-20 06:39:29.333078,Emotional Skills,Communication Skills,Mental Skills,2024-08-22 17:38:29.333078
+Priya,Probability,36,2024-08-20 06:39:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-09-02 03:41:29.333078
+Priya,Probability,36,2024-08-20 06:39:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-09-10 21:30:29.333078
+Priya,Probability,36,2024-08-20 06:39:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-21 05:57:29.333078
+Priya,Optics,37,2024-09-11 23:04:29.333078,Emotional Skills,Communication Skills,Mental Skills,2024-08-22 17:38:29.333078
+Priya,Optics,37,2024-09-11 23:04:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-09-02 03:41:29.333078
+Priya,Optics,37,2024-09-11 23:04:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-09-10 21:30:29.333078
+Priya,Optics,37,2024-09-11 23:04:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-21 05:57:29.333078
+Neha,Calculus,22,2024-08-15 15:38:29.333078,Teamwork,Technological Proficiency,Physical Health,2024-09-11 13:30:29.333078
+Neha,Calculus,22,2024-08-15 15:38:29.333078,Test Taking Skills,Communication Skills,Time Management,2024-08-31 23:24:29.333078
+Suman,Probability,27,2024-09-01 11:47:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-03 21:05:29.333078
+Suman,Probability,27,2024-09-01 11:47:29.333078,Teamwork,Physical Health Management,Physical Health,2024-08-16 10:55:29.333078
+Suman,Probability,27,2024-09-01 11:47:29.333078,Time Management,Leadership,Mental Skills,2024-08-20 19:07:29.333078
+Anjali,Probability,38,2024-08-30 18:07:29.333078,Emotional Skills,Collaboration,Time Management,2024-08-17 08:19:29.333078
+Anjali,Probability,38,2024-08-30 18:07:29.333078,Test Taking Skills,Communication Skills,Physical Health,2024-08-13 10:21:29.333078
+Anjali,Probability,38,2024-08-30 18:07:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-08-23 09:50:29.333078
+Anjali,Probability,38,2024-08-30 18:07:29.333078,Time Management,Physical Health Management,Cognitive Skills,2024-09-01 00:15:29.333078
+Arjun,Thermodynamics,22,2024-08-16 02:58:29.333078,Cognitive Skills,Collaboration,Time Management,2024-09-02 16:29:29.333078
+Arjun,Thermodynamics,22,2024-08-16 02:58:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-12 19:33:29.333078
+Arjun,Thermodynamics,22,2024-08-16 02:58:29.333078,Time Management,Creativity,Physical Health,2024-08-23 13:53:29.333078
+Neha,Probability,21,2024-08-30 10:38:29.333078,Teamwork,Technological Proficiency,Physical Health,2024-09-11 13:30:29.333078
+Neha,Probability,21,2024-08-30 10:38:29.333078,Test Taking Skills,Communication Skills,Time Management,2024-08-31 23:24:29.333078
+Nikhil,Thermodynamics,38,2024-08-23 21:37:29.333078,Analytical Skills,Technological Proficiency,Motivation,2024-09-07 09:21:29.333078
+Nikhil,Thermodynamics,38,2024-08-23 21:37:29.333078,Emotional Skills,Collaboration,Physical Health,2024-08-26 21:32:29.333078
+Nikhil,Thermodynamics,38,2024-08-23 21:37:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-01 12:54:29.333078
+Nikhil,Thermodynamics,38,2024-08-23 21:37:29.333078,Teamwork,Communication Skills,Cognitive Skills,2024-08-18 16:59:29.333078
+Nikhil,Thermodynamics,38,2024-08-23 21:37:29.333078,Emotional Skills,Leadership,Motivation,2024-08-25 06:07:29.333078
+Anjali,Probability,22,2024-09-05 08:55:29.333078,Emotional Skills,Collaboration,Time Management,2024-08-17 08:19:29.333078
+Anjali,Probability,22,2024-09-05 08:55:29.333078,Test Taking Skills,Communication Skills,Physical Health,2024-08-13 10:21:29.333078
+Anjali,Probability,22,2024-09-05 08:55:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-08-23 09:50:29.333078
+Anjali,Probability,22,2024-09-05 08:55:29.333078,Time Management,Physical Health Management,Cognitive Skills,2024-09-01 00:15:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-06 08:03:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Mental Skills,Communication Skills,Physical Health,2024-09-06 18:29:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Teamwork,Leadership,Physical Health,2024-09-06 15:49:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Test Taking Skills,Creativity,Motivation,2024-09-11 10:24:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Analytical Skills,Collaboration,Motivation,2024-08-31 08:37:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Cognitive Skills,Physical Health Management,Physical Health,2024-09-11 12:32:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Time Management,Leadership,Motivation,2024-09-05 19:21:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Test Taking Skills,Technological Proficiency,Physical Health,2024-08-25 02:49:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Emotional Skills,Physical Health Management,Cognitive Skills,2024-08-24 20:59:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-18 06:00:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Test Taking Skills,Technological Proficiency,Attention to Detail,2024-09-04 21:05:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Problem Solving,Creativity,Mental Skills,2024-09-10 02:29:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Mental Skills,Communication Skills,Physical Health,2024-08-26 08:35:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Problem Solving,Technological Proficiency,Motivation,2024-08-14 15:57:29.333078
+Rohit,Electrostatics,34,2024-08-25 04:37:29.333078,Time Management,Creativity,Mental Skills,2024-08-20 09:16:29.333078
+Ishaan,Organic Chemistry,21,2024-08-16 01:25:29.333078,Teamwork,Physical Health Management,Cognitive Skills,2024-08-24 23:26:29.333078
+Ishaan,Organic Chemistry,21,2024-08-16 01:25:29.333078,Emotional Skills,Collaboration,Motivation,2024-09-04 16:28:29.333078
+Ishaan,Organic Chemistry,21,2024-08-16 01:25:29.333078,Analytical Skills,Leadership,Motivation,2024-09-01 14:14:29.333078
+Ishaan,Organic Chemistry,21,2024-08-16 01:25:29.333078,Emotional Skills,Communication Skills,Physical Health,2024-08-22 14:12:29.333078
+Nikhil,Algebra,23,2024-09-05 04:23:29.333078,Analytical Skills,Technological Proficiency,Motivation,2024-09-07 09:21:29.333078
+Nikhil,Algebra,23,2024-09-05 04:23:29.333078,Emotional Skills,Collaboration,Physical Health,2024-08-26 21:32:29.333078
+Nikhil,Algebra,23,2024-09-05 04:23:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-01 12:54:29.333078
+Nikhil,Algebra,23,2024-09-05 04:23:29.333078,Teamwork,Communication Skills,Cognitive Skills,2024-08-18 16:59:29.333078
+Nikhil,Algebra,23,2024-09-05 04:23:29.333078,Emotional Skills,Leadership,Motivation,2024-08-25 06:07:29.333078
+Mohan,Thermodynamics,29,2024-08-18 08:13:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Thermodynamics,29,2024-08-18 08:13:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Thermodynamics,29,2024-08-18 08:13:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Anjali,Thermodynamics,21,2024-09-09 05:19:29.333078,Emotional Skills,Collaboration,Time Management,2024-08-17 08:19:29.333078
+Anjali,Thermodynamics,21,2024-09-09 05:19:29.333078,Test Taking Skills,Communication Skills,Physical Health,2024-08-13 10:21:29.333078
+Anjali,Thermodynamics,21,2024-09-09 05:19:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-08-23 09:50:29.333078
+Anjali,Thermodynamics,21,2024-09-09 05:19:29.333078,Time Management,Physical Health Management,Cognitive Skills,2024-09-01 00:15:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-06 08:03:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Mental Skills,Communication Skills,Physical Health,2024-09-06 18:29:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Teamwork,Leadership,Physical Health,2024-09-06 15:49:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Test Taking Skills,Creativity,Motivation,2024-09-11 10:24:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Analytical Skills,Collaboration,Motivation,2024-08-31 08:37:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Cognitive Skills,Physical Health Management,Physical Health,2024-09-11 12:32:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Time Management,Leadership,Motivation,2024-09-05 19:21:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Test Taking Skills,Technological Proficiency,Physical Health,2024-08-25 02:49:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Emotional Skills,Physical Health Management,Cognitive Skills,2024-08-24 20:59:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-18 06:00:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Test Taking Skills,Technological Proficiency,Attention to Detail,2024-09-04 21:05:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Problem Solving,Creativity,Mental Skills,2024-09-10 02:29:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Mental Skills,Communication Skills,Physical Health,2024-08-26 08:35:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Problem Solving,Technological Proficiency,Motivation,2024-08-14 15:57:29.333078
+Rohit,Calculus,38,2024-08-21 13:11:29.333078,Time Management,Creativity,Mental Skills,2024-08-20 09:16:29.333078
+Sneha,Calculus,28,2024-08-18 23:52:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-15 04:04:29.333078
+Sneha,Calculus,28,2024-08-18 23:52:29.333078,Emotional Skills,Leadership,Mental Skills,2024-08-28 18:52:29.333078
+Sneha,Calculus,28,2024-08-18 23:52:29.333078,Emotional Skills,Physical Health Management,Time Management,2024-08-25 16:40:29.333078
+Sneha,Calculus,28,2024-08-18 23:52:29.333078,Problem Solving,Physical Health Management,Mental Skills,2024-09-02 19:31:29.333078
+Sneha,Calculus,28,2024-08-18 23:52:29.333078,Mental Skills,Creativity,Mental Skills,2024-09-11 22:44:29.333078
+Sneha,Calculus,28,2024-08-18 23:52:29.333078,Test Taking Skills,Technological Proficiency,Mental Skills,2024-09-11 16:53:29.333078
+Sneha,Thermodynamics,36,2024-08-13 10:16:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-15 04:04:29.333078
+Sneha,Thermodynamics,36,2024-08-13 10:16:29.333078,Emotional Skills,Leadership,Mental Skills,2024-08-28 18:52:29.333078
+Sneha,Thermodynamics,36,2024-08-13 10:16:29.333078,Emotional Skills,Physical Health Management,Time Management,2024-08-25 16:40:29.333078
+Sneha,Thermodynamics,36,2024-08-13 10:16:29.333078,Problem Solving,Physical Health Management,Mental Skills,2024-09-02 19:31:29.333078
+Sneha,Thermodynamics,36,2024-08-13 10:16:29.333078,Mental Skills,Creativity,Mental Skills,2024-09-11 22:44:29.333078
+Sneha,Thermodynamics,36,2024-08-13 10:16:29.333078,Test Taking Skills,Technological Proficiency,Mental Skills,2024-09-11 16:53:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Mental Skills,Creativity,Motivation,2024-08-12 23:36:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Problem Solving,Physical Health Management,Time Management,2024-08-27 17:14:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Problem Solving,Creativity,Motivation,2024-09-07 16:19:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-08-20 23:36:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Test Taking Skills,Communication Skills,Motivation,2024-09-09 21:53:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Cognitive Skills,Communication Skills,Time Management,2024-09-07 00:18:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Test Taking Skills,Collaboration,Physical Health,2024-09-04 22:43:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Mental Skills,Technological Proficiency,Physical Health,2024-08-13 17:58:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Test Taking Skills,Leadership,Cognitive Skills,2024-08-22 13:42:29.333078
+Vikas,Optics,24,2024-09-02 23:45:29.333078,Problem Solving,Leadership,Time Management,2024-08-23 16:23:29.333078
+Megha,Probability,28,2024-08-18 11:14:29.333078,Cognitive Skills,Leadership,Time Management,2024-09-01 21:15:29.333078
+Megha,Probability,28,2024-08-18 11:14:29.333078,Mental Skills,Communication Skills,Mental Skills,2024-09-08 02:16:29.333078
+Megha,Probability,28,2024-08-18 11:14:29.333078,Analytical Skills,Communication Skills,Time Management,2024-09-10 02:21:29.333078
+Megha,Probability,28,2024-08-18 11:14:29.333078,Test Taking Skills,Creativity,Attention to Detail,2024-09-03 05:21:29.333078
+Megha,Probability,28,2024-08-18 11:14:29.333078,Mental Skills,Technological Proficiency,Motivation,2024-09-11 09:57:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Mental Skills,Creativity,Motivation,2024-08-12 23:36:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Problem Solving,Physical Health Management,Time Management,2024-08-27 17:14:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Problem Solving,Creativity,Motivation,2024-09-07 16:19:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-08-20 23:36:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Test Taking Skills,Communication Skills,Motivation,2024-09-09 21:53:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Cognitive Skills,Communication Skills,Time Management,2024-09-07 00:18:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Test Taking Skills,Collaboration,Physical Health,2024-09-04 22:43:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Mental Skills,Technological Proficiency,Physical Health,2024-08-13 17:58:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Test Taking Skills,Leadership,Cognitive Skills,2024-08-22 13:42:29.333078
+Vikas,Thermodynamics,24,2024-09-10 10:57:29.333078,Problem Solving,Leadership,Time Management,2024-08-23 16:23:29.333078
+Neha,Coordinate Geometry,38,2024-08-24 08:28:29.333078,Teamwork,Technological Proficiency,Physical Health,2024-09-11 13:30:29.333078
+Neha,Coordinate Geometry,38,2024-08-24 08:28:29.333078,Test Taking Skills,Communication Skills,Time Management,2024-08-31 23:24:29.333078
+Mohan,Probability,39,2024-09-12 09:17:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Probability,39,2024-09-12 09:17:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Probability,39,2024-09-12 09:17:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Suman,Modern Physics,37,2024-08-26 12:34:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-03 21:05:29.333078
+Suman,Modern Physics,37,2024-08-26 12:34:29.333078,Teamwork,Physical Health Management,Physical Health,2024-08-16 10:55:29.333078
+Suman,Modern Physics,37,2024-08-26 12:34:29.333078,Time Management,Leadership,Mental Skills,2024-08-20 19:07:29.333078
+Megha,Organic Chemistry,30,2024-08-15 02:58:29.333078,Cognitive Skills,Leadership,Time Management,2024-09-01 21:15:29.333078
+Megha,Organic Chemistry,30,2024-08-15 02:58:29.333078,Mental Skills,Communication Skills,Mental Skills,2024-09-08 02:16:29.333078
+Megha,Organic Chemistry,30,2024-08-15 02:58:29.333078,Analytical Skills,Communication Skills,Time Management,2024-09-10 02:21:29.333078
+Megha,Organic Chemistry,30,2024-08-15 02:58:29.333078,Test Taking Skills,Creativity,Attention to Detail,2024-09-03 05:21:29.333078
+Megha,Organic Chemistry,30,2024-08-15 02:58:29.333078,Mental Skills,Technological Proficiency,Motivation,2024-09-11 09:57:29.333078
+Ishaan,Algebra,33,2024-08-31 17:50:29.333078,Teamwork,Physical Health Management,Cognitive Skills,2024-08-24 23:26:29.333078
+Ishaan,Algebra,33,2024-08-31 17:50:29.333078,Emotional Skills,Collaboration,Motivation,2024-09-04 16:28:29.333078
+Ishaan,Algebra,33,2024-08-31 17:50:29.333078,Analytical Skills,Leadership,Motivation,2024-09-01 14:14:29.333078
+Ishaan,Algebra,33,2024-08-31 17:50:29.333078,Emotional Skills,Communication Skills,Physical Health,2024-08-22 14:12:29.333078
+Swati,Coordinate Geometry,30,2024-08-14 19:06:29.333078,Emotional Skills,Leadership,Physical Health,2024-08-23 15:30:29.333078
+Swati,Coordinate Geometry,30,2024-08-14 19:06:29.333078,Test Taking Skills,Leadership,Cognitive Skills,2024-09-11 17:02:29.333078
+Swati,Coordinate Geometry,30,2024-08-14 19:06:29.333078,Time Management,Technological Proficiency,Time Management,2024-08-23 01:47:29.333078
+Swati,Coordinate Geometry,30,2024-08-14 19:06:29.333078,Problem Solving,Creativity,Motivation,2024-08-22 20:18:29.333078
+Swati,Coordinate Geometry,30,2024-08-14 19:06:29.333078,Cognitive Skills,Collaboration,Mental Skills,2024-08-19 21:55:29.333078
+Swati,Coordinate Geometry,30,2024-08-14 19:06:29.333078,Cognitive Skills,Technological Proficiency,Mental Skills,2024-09-02 20:16:29.333078
+Nikhil,Modern Physics,30,2024-08-23 08:36:29.333078,Analytical Skills,Technological Proficiency,Motivation,2024-09-07 09:21:29.333078
+Nikhil,Modern Physics,30,2024-08-23 08:36:29.333078,Emotional Skills,Collaboration,Physical Health,2024-08-26 21:32:29.333078
+Nikhil,Modern Physics,30,2024-08-23 08:36:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-01 12:54:29.333078
+Nikhil,Modern Physics,30,2024-08-23 08:36:29.333078,Teamwork,Communication Skills,Cognitive Skills,2024-08-18 16:59:29.333078
+Nikhil,Modern Physics,30,2024-08-23 08:36:29.333078,Emotional Skills,Leadership,Motivation,2024-08-25 06:07:29.333078
+Mohan,Mechanics,40,2024-08-23 15:22:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Mechanics,40,2024-08-23 15:22:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Mechanics,40,2024-08-23 15:22:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Priya,Probability,35,2024-08-22 07:19:29.333078,Emotional Skills,Communication Skills,Mental Skills,2024-08-22 17:38:29.333078
+Priya,Probability,35,2024-08-22 07:19:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-09-02 03:41:29.333078
+Priya,Probability,35,2024-08-22 07:19:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-09-10 21:30:29.333078
+Priya,Probability,35,2024-08-22 07:19:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-21 05:57:29.333078
+Megha,Thermodynamics,31,2024-08-21 04:32:29.333078,Cognitive Skills,Leadership,Time Management,2024-09-01 21:15:29.333078
+Megha,Thermodynamics,31,2024-08-21 04:32:29.333078,Mental Skills,Communication Skills,Mental Skills,2024-09-08 02:16:29.333078
+Megha,Thermodynamics,31,2024-08-21 04:32:29.333078,Analytical Skills,Communication Skills,Time Management,2024-09-10 02:21:29.333078
+Megha,Thermodynamics,31,2024-08-21 04:32:29.333078,Test Taking Skills,Creativity,Attention to Detail,2024-09-03 05:21:29.333078
+Megha,Thermodynamics,31,2024-08-21 04:32:29.333078,Mental Skills,Technological Proficiency,Motivation,2024-09-11 09:57:29.333078
+Amit,Coordinate Geometry,35,2024-08-29 23:20:29.333078,Teamwork,Physical Health Management,Attention to Detail,2024-09-02 20:23:29.333078
+Amit,Coordinate Geometry,35,2024-08-29 23:20:29.333078,Emotional Skills,Technological Proficiency,Mental Skills,2024-08-25 09:31:29.333078
+Amit,Coordinate Geometry,35,2024-08-29 23:20:29.333078,Time Management,Leadership,Time Management,2024-08-22 07:43:29.333078
+Mohan,Electrostatics,39,2024-09-11 04:47:29.333078,Time Management,Physical Health Management,Attention to Detail,2024-08-28 04:31:29.333078
+Mohan,Electrostatics,39,2024-09-11 04:47:29.333078,Cognitive Skills,Leadership,Attention to Detail,2024-08-25 09:16:29.333078
+Mohan,Electrostatics,39,2024-09-11 04:47:29.333078,Cognitive Skills,Technological Proficiency,Attention to Detail,2024-09-05 04:57:29.333078
+Divya,Mechanics,37,2024-08-27 02:38:29.333078,Analytical Skills,Communication Skills,Cognitive Skills,2024-08-22 03:55:29.333078
+Divya,Mechanics,37,2024-08-27 02:38:29.333078,Mental Skills,Physical Health Management,Motivation,2024-08-18 06:02:29.333078
+Pranav,Optics,20,2024-09-10 13:17:29.333078,Time Management,Collaboration,Cognitive Skills,2024-08-25 17:43:29.333078
+Pranav,Optics,20,2024-09-10 13:17:29.333078,Emotional Skills,Physical Health Management,Physical Health,2024-08-16 11:57:29.333078
+Pranav,Optics,20,2024-09-10 13:17:29.333078,Time Management,Collaboration,Attention to Detail,2024-09-11 10:02:29.333078
+Pranav,Optics,20,2024-09-10 13:17:29.333078,Emotional Skills,Leadership,Time Management,2024-08-24 18:31:29.333078
+Pranav,Optics,20,2024-09-10 13:17:29.333078,Test Taking Skills,Physical Health Management,Time Management,2024-08-18 02:58:29.333078
+Pranav,Optics,20,2024-09-10 13:17:29.333078,Emotional Skills,Physical Health Management,Attention to Detail,2024-09-07 05:18:29.333078
+Pranav,Optics,20,2024-09-10 13:17:29.333078,Teamwork,Collaboration,Attention to Detail,2024-08-26 15:54:29.333078
+Pranav,Optics,20,2024-09-10 13:17:29.333078,Teamwork,Communication Skills,Attention to Detail,2024-08-14 18:31:29.333078
+Pranav,Optics,20,2024-09-10 13:17:29.333078,Problem Solving,Physical Health Management,Attention to Detail,2024-08-31 06:41:29.333078
+Priya,Organic Chemistry,26,2024-09-03 18:50:29.333078,Emotional Skills,Communication Skills,Mental Skills,2024-08-22 17:38:29.333078
+Priya,Organic Chemistry,26,2024-09-03 18:50:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-09-02 03:41:29.333078
+Priya,Organic Chemistry,26,2024-09-03 18:50:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-09-10 21:30:29.333078
+Priya,Organic Chemistry,26,2024-09-03 18:50:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-21 05:57:29.333078
+Suman,Thermodynamics,28,2024-09-11 15:09:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-03 21:05:29.333078
+Suman,Thermodynamics,28,2024-09-11 15:09:29.333078,Teamwork,Physical Health Management,Physical Health,2024-08-16 10:55:29.333078
+Suman,Thermodynamics,28,2024-09-11 15:09:29.333078,Time Management,Leadership,Mental Skills,2024-08-20 19:07:29.333078
+Ishaan,Algebra,30,2024-08-14 13:51:29.333078,Teamwork,Physical Health Management,Cognitive Skills,2024-08-24 23:26:29.333078
+Ishaan,Algebra,30,2024-08-14 13:51:29.333078,Emotional Skills,Collaboration,Motivation,2024-09-04 16:28:29.333078
+Ishaan,Algebra,30,2024-08-14 13:51:29.333078,Analytical Skills,Leadership,Motivation,2024-09-01 14:14:29.333078
+Ishaan,Algebra,30,2024-08-14 13:51:29.333078,Emotional Skills,Communication Skills,Physical Health,2024-08-22 14:12:29.333078
+Amit,Electrostatics,37,2024-09-11 01:46:29.333078,Teamwork,Physical Health Management,Attention to Detail,2024-09-02 20:23:29.333078
+Amit,Electrostatics,37,2024-09-11 01:46:29.333078,Emotional Skills,Technological Proficiency,Mental Skills,2024-08-25 09:31:29.333078
+Amit,Electrostatics,37,2024-09-11 01:46:29.333078,Time Management,Leadership,Time Management,2024-08-22 07:43:29.333078
+Ishaan,Algebra,28,2024-08-26 09:36:29.333078,Teamwork,Physical Health Management,Cognitive Skills,2024-08-24 23:26:29.333078
+Ishaan,Algebra,28,2024-08-26 09:36:29.333078,Emotional Skills,Collaboration,Motivation,2024-09-04 16:28:29.333078
+Ishaan,Algebra,28,2024-08-26 09:36:29.333078,Analytical Skills,Leadership,Motivation,2024-09-01 14:14:29.333078
+Ishaan,Algebra,28,2024-08-26 09:36:29.333078,Emotional Skills,Communication Skills,Physical Health,2024-08-22 14:12:29.333078
+Swati,Mechanics,32,2024-08-20 16:12:29.333078,Emotional Skills,Leadership,Physical Health,2024-08-23 15:30:29.333078
+Swati,Mechanics,32,2024-08-20 16:12:29.333078,Test Taking Skills,Leadership,Cognitive Skills,2024-09-11 17:02:29.333078
+Swati,Mechanics,32,2024-08-20 16:12:29.333078,Time Management,Technological Proficiency,Time Management,2024-08-23 01:47:29.333078
+Swati,Mechanics,32,2024-08-20 16:12:29.333078,Problem Solving,Creativity,Motivation,2024-08-22 20:18:29.333078
+Swati,Mechanics,32,2024-08-20 16:12:29.333078,Cognitive Skills,Collaboration,Mental Skills,2024-08-19 21:55:29.333078
+Swati,Mechanics,32,2024-08-20 16:12:29.333078,Cognitive Skills,Technological Proficiency,Mental Skills,2024-09-02 20:16:29.333078
+Priya,Organic Chemistry,31,2024-08-16 09:59:29.333078,Emotional Skills,Communication Skills,Mental Skills,2024-08-22 17:38:29.333078
+Priya,Organic Chemistry,31,2024-08-16 09:59:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-09-02 03:41:29.333078
+Priya,Organic Chemistry,31,2024-08-16 09:59:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-09-10 21:30:29.333078
+Priya,Organic Chemistry,31,2024-08-16 09:59:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-21 05:57:29.333078
+Arjun,Probability,36,2024-08-29 23:00:29.333078,Cognitive Skills,Collaboration,Time Management,2024-09-02 16:29:29.333078
+Arjun,Probability,36,2024-08-29 23:00:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-12 19:33:29.333078
+Arjun,Probability,36,2024-08-29 23:00:29.333078,Time Management,Creativity,Physical Health,2024-08-23 13:53:29.333078
+Ravi,Optics,22,2024-08-22 04:16:29.333078,Time Management,Creativity,Time Management,2024-08-29 00:57:29.333078
+Ravi,Optics,22,2024-08-22 04:16:29.333078,Mental Skills,Creativity,Mental Skills,2024-08-12 23:03:29.333078
+Ravi,Optics,22,2024-08-22 04:16:29.333078,Time Management,Communication Skills,Attention to Detail,2024-08-25 22:21:29.333078
+Arjun,Calculus,33,2024-09-09 22:37:29.333078,Cognitive Skills,Collaboration,Time Management,2024-09-02 16:29:29.333078
+Arjun,Calculus,33,2024-09-09 22:37:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-12 19:33:29.333078
+Arjun,Calculus,33,2024-09-09 22:37:29.333078,Time Management,Creativity,Physical Health,2024-08-23 13:53:29.333078
+Arjun,Algebra,30,2024-09-01 15:57:29.333078,Cognitive Skills,Collaboration,Time Management,2024-09-02 16:29:29.333078
+Arjun,Algebra,30,2024-09-01 15:57:29.333078,Analytical Skills,Leadership,Attention to Detail,2024-09-12 19:33:29.333078
+Arjun,Algebra,30,2024-09-01 15:57:29.333078,Time Management,Creativity,Physical Health,2024-08-23 13:53:29.333078
+Priya,Algebra,37,2024-09-07 22:53:29.333078,Emotional Skills,Communication Skills,Mental Skills,2024-08-22 17:38:29.333078
+Priya,Algebra,37,2024-09-07 22:53:29.333078,Cognitive Skills,Creativity,Mental Skills,2024-09-02 03:41:29.333078
+Priya,Algebra,37,2024-09-07 22:53:29.333078,Cognitive Skills,Collaboration,Cognitive Skills,2024-09-10 21:30:29.333078
+Priya,Algebra,37,2024-09-07 22:53:29.333078,Teamwork,Technological Proficiency,Motivation,2024-08-21 05:57:29.333078
+Suman,Electrostatics,36,2024-08-17 03:14:29.333078,Mental Skills,Collaboration,Mental Skills,2024-09-03 21:05:29.333078
+Suman,Electrostatics,36,2024-08-17 03:14:29.333078,Teamwork,Physical Health Management,Physical Health,2024-08-16 10:55:29.333078
+Suman,Electrostatics,36,2024-08-17 03:14:29.333078,Time Management,Leadership,Mental Skills,2024-08-20 19:07:29.333078
