@@ -1,111 +1,54 @@
-import numpy as np
+import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-import ipywidgets as widgets
-from IPython.display import display, clear_output
-from io import StringIO
+import numpy as np
 
 # Initialize global variable for the dataframe
 df = pd.DataFrame()
 
-# Create a file upload widget
-upload_widget = widgets.FileUpload(
-    accept='.csv',  # Accept only CSV files
-    multiple=False  # Single file upload
-)
-
-# Create dropdown widgets
-chapter_dropdown = widgets.Dropdown(
-    options=[],  # Options will be updated dynamically
-    value=None,  # Default value will be updated dynamically
-    description='Chapter:',
-    disabled=False,
-)
-
-column_dropdown = widgets.Dropdown(
-    options=[],  # Options will be updated dynamically
-    description='Correlate with:',
-    disabled=False,
-)
-
-def handle_upload(change):
+def load_data(uploaded_file):
     global df
-    if upload_widget.value:
-        # Read the uploaded file into a DataFrame
-        uploaded_file = next(iter(upload_widget.value.values()))
-        file_content = uploaded_file['content']
-        df = pd.read_csv(StringIO(file_content.decode('utf-8')))
-        
-        # Ensure 'Test Score' is numeric
-        df['Test Score'] = pd.to_numeric(df['Test Score'], errors='coerce')
-        
-        # Update dropdown options
-        update_dropdowns()
-        print("Data loaded successfully. Please select options from the dropdowns.")
+    df = pd.read_csv(uploaded_file)
+    df['Test Score'] = pd.to_numeric(df['Test Score'], errors='coerce')
 
-        # Perform additional analyses
-        perform_performance_analysis()
-        perform_skills_analysis()
-
-def update_dropdowns():
-    global chapter_dropdown, column_dropdown
-    
-    # Update chapter dropdown options
-    available_chapters = df['Test Chapter'].unique()
-    chapter_dropdown.options = available_chapters
-    chapter_dropdown.value = available_chapters[0] if available_chapters.size > 0 else None
-    
-    # Update column dropdown options
-    correlation_columns = ['Strength_encoded', 'Opportunity_encoded', 'Challenge_encoded']
-    column_dropdown.options = correlation_columns
-    column_dropdown.value = correlation_columns[0] if correlation_columns else None
-
-
-
-
-
-def perform_performance_analysis():
-    global df
-    # Check if 'Test Score' is numeric
+def perform_performance_analysis(df):
     if not pd.api.types.is_numeric_dtype(df['Test Score']):
-        print("Error: 'Test Score' column must be numeric.")
+        st.error("Error: 'Test Score' column must be numeric.")
         return
     
     # Average Test Score by Chapter
     avg_score_by_chapter = df.groupby('Test Chapter')['Test Score'].mean().reset_index()
     avg_score_by_chapter.columns = ['Test Chapter', 'Average Test Score']
     
-    print("\nAverage Test Score by Chapter:")
-    print(avg_score_by_chapter)
+    st.subheader("Average Test Score by Chapter")
+    st.write(avg_score_by_chapter)
     
     # Plot Average Test Score by Chapter
-    plt.figure(figsize=(10, 6))
-    sns.barplot(x='Test Chapter', y='Average Test Score', data=avg_score_by_chapter, palette='viridis')
+    fig, ax = plt.subplots(figsize=(10, 6))
+    sns.barplot(x='Test Chapter', y='Average Test Score', data=avg_score_by_chapter, palette='viridis', ax=ax)
     plt.title('Average Test Score by Chapter')
     plt.xlabel('Test Chapter')
     plt.ylabel('Average Test Score')
     plt.xticks(rotation=45)
-    plt.show()
+    st.pyplot(fig)
     
     # Check for empty 'Test Score' data
     if df['Test Score'].dropna().empty:
-        print("Error: No valid 'Test Score' data available.")
+        st.error("Error: No valid 'Test Score' data available.")
         return
     
     # Score Distribution
-    plt.figure(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(10, 6))
     test_scores = df['Test Score'].dropna().values
-    plt.hist(test_scores, bins=10, edgecolor='black')
+    ax.hist(test_scores, bins=10, edgecolor='black')
     plt.title('Distribution of Test Scores')
     plt.xlabel('Test Score')
     plt.ylabel('Frequency')
-    plt.show()
+    st.pyplot(fig)
 
-# ... (rest of the code remains the same)
-def perform_skills_analysis():
-    global df
+def perform_skills_analysis(df):
     # Encode categorical columns using LabelEncoder
     label_encoder = LabelEncoder()
     df['Strength_encoded'] = label_encoder.fit_transform(df['Strength'].astype(str))
@@ -116,30 +59,24 @@ def perform_skills_analysis():
     skill_frequency = pd.concat([df['Strength'], df['Opportunity'], df['Challenge']]).value_counts().reset_index()
     skill_frequency.columns = ['Skill', 'Frequency']
     
-    print("\nSkill Frequency Analysis:")
-    print(skill_frequency)
+    st.subheader("Skill Frequency Analysis")
+    st.write(skill_frequency)
     
     # Plot Skill Frequency
-    plt.figure(figsize=(12, 8))
-    sns.barplot(x='Frequency', y='Skill', data=skill_frequency, palette='Set2')
+    fig, ax = plt.subplots(figsize=(12, 8))
+    sns.barplot(x='Frequency', y='Skill', data=skill_frequency, palette='Set2', ax=ax)
     plt.title('Frequency of Skills')
     plt.xlabel('Frequency')
     plt.ylabel('Skill')
-    plt.show()
+    st.pyplot(fig)
 
-def display_correlation(change):
-    clear_output(wait=True)  # Clear previous outputs
-    display(upload_widget, chapter_dropdown, column_dropdown)  # Display widgets again
-    
+def display_correlation(df, chapter, column):
     if df.empty:
-        print("No data available. Please upload a CSV file.")
+        st.error("No data available. Please upload a CSV file.")
         return
     
-    chapter = chapter_dropdown.value
-    column = column_dropdown.value
-    
     if not chapter or not column:
-        print("Please select both a chapter and a column.")
+        st.error("Please select both a chapter and a column.")
         return
     
     # Filter data for the selected chapter and create a copy to avoid SettingWithCopyWarning
@@ -155,23 +92,36 @@ def display_correlation(change):
     correlation_matrix = df_filtered[['Test Score', 'Strength_encoded', 'Opportunity_encoded', 'Challenge_encoded']].corr()
 
     # Display the correlation matrix
-    print(f"Correlation matrix for '{chapter}':\n", correlation_matrix)
+    st.subheader(f"Correlation matrix for '{chapter}'")
+    st.write(correlation_matrix)
     
     # Plot heatmap
-    plt.figure(figsize=(8, 6))
-    sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, cbar=True, square=True, fmt=".2f")
+    fig, ax = plt.subplots(figsize=(8, 6))
+    sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, cbar=True, square=True, fmt=".2f", ax=ax)
     plt.title(f"Correlation Heatmap for '{chapter}'")
-    plt.show()
+    st.pyplot(fig)
     
     # Display only the correlation between the selected column and 'Test Score'
     if column in correlation_matrix.columns:
         correlation_value = df_filtered['Test Score'].corr(df_filtered[column])
-        print(f"Correlation between '{column}' and 'Test Score' for '{chapter}': {correlation_value}")
+        st.write(f"Correlation between '{column}' and 'Test Score' for '{chapter}': {correlation_value}")
 
-# Set up event listeners
-upload_widget.observe(handle_upload, names='value')
-chapter_dropdown.observe(display_correlation, names='value')
-column_dropdown.observe(display_correlation, names='value')
+# Streamlit App Layout
+st.title('Student Performance Analysis')
 
-# Display widgets
-display(upload_widget, chapter_dropdown, column_dropdown)
+uploaded_file = st.file_uploader("Upload a CSV file", type="csv")
+
+if uploaded_file is not None:
+    load_data(uploaded_file)
+    st.success("Data loaded successfully.")
+    
+    # Perform additional analyses
+    perform_performance_analysis(df)
+    perform_skills_analysis(df)
+    
+    # Dropdowns for correlation analysis
+    chapter = st.selectbox("Select Chapter", options=df['Test Chapter'].unique())
+    column = st.selectbox("Select Column to Correlate With", options=['Strength_encoded', 'Opportunity_encoded', 'Challenge_encoded'])
+    
+    if st.button("Show Correlation"):
+        display_correlation(df, chapter, column)
