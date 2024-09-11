@@ -20,7 +20,8 @@ st.markdown("""
     .css-2trqyj {background-color: #dbe4f0; border-radius: 10px;} /* Light blue background for boxes */
     </style>
 """, unsafe_allow_html=True)
-
+# Add name in the top-right corner
+st.markdown('<div class="top-right">Rittik Halder</div>', unsafe_allow_html=True)
 # Initialize session state
 if 'df' not in st.session_state:
     st.session_state.df = pd.DataFrame()
