@@ -1,13 +1,42 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-from io import StringIO
 
-# Set page config
-st.set_page_config(page_title="Enhanced Data Analysis App", layout="wide")
+# Set page config with a custom theme
+st.set_page_config(page_title="Advanced Data Analysis App", layout="wide")
+
+# Custom CSS for advanced styling
+st.markdown("""
+    <style>
+    .main {
+        background-color: #f0f2f6;
+        color: #000000;
+    }
+    .sidebar .sidebar-content {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    h1, h2, h3, h4 {
+        color: #333333;
+        font-family: 'Segoe UI';
+    }
+    .stButton>button {
+        background-color: #007bff; color: white; border-radius: 5px;
+    }
+    .stSelectbox>div {
+        font-family: 'Segoe UI'; font-size: 14px;
+        color: #000000;
+    }
+    .stMarkdown {
+        color: #000000;
+    }
+    .stPlot {
+        background-color: #ffffff;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Initialize session state
 if 'df' not in st.session_state:
@@ -19,6 +48,7 @@ page = st.sidebar.radio("Go to", ["Upload Data", "Performance Analysis", "Skills
 
 # File upload
 def handle_upload():
+    st.markdown("### 📂 Upload Your Dataset")
     uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
@@ -37,24 +67,25 @@ def performance_analysis():
     
     avg_score_by_chapter = st.session_state.df.groupby('Test Chapter')['Test Score'].mean().reset_index()
     
-    st.write(f"Performance Analysis for '{chapter}':")
+    st.markdown(f"## Performance Analysis for '{chapter}'")
     st.write(avg_score_by_chapter[avg_score_by_chapter['Test Chapter'] == chapter])
     
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(12, 6))
     sns.barplot(x='Test Chapter', y='Test Score', data=avg_score_by_chapter, palette='viridis', ax=ax)
-    plt.title(f'Average Test Score by Chapter')
-    plt.xlabel('Test Chapter')
-    plt.ylabel('Average Test Score')
-    plt.xticks(rotation=45)
+    plt.title('Average Test Score by Chapter', fontsize=16, color='black')
+    plt.xlabel('Test Chapter', fontsize=14, color='black')
+    plt.ylabel('Average Test Score', fontsize=14, color='black')
+    plt.xticks(rotation=45, color='black')
+    plt.yticks(color='black')
     st.pyplot(fig)
 
     # Score Distribution
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(12, 6))
     test_scores = st.session_state.df[st.session_state.df['Test Chapter'] == chapter]['Test Score'].dropna().values
-    plt.hist(test_scores, bins=10, edgecolor='black')
-    plt.title(f'Distribution of Test Scores for {chapter}')
-    plt.xlabel('Test Score')
-    plt.ylabel('Frequency')
+    plt.hist(test_scores, bins=15, edgecolor='black', color='#007bff')
+    plt.title(f'Distribution of Test Scores for {chapter}', fontsize=16, color='black')
+    plt.xlabel('Test Score', fontsize=14, color='black')
+    plt.ylabel('Frequency', fontsize=14, color='black')
     st.pyplot(fig)
 
 # Skills Analysis
@@ -71,14 +102,14 @@ def skills_analysis():
     skill_frequency = pd.concat([df['Strength'], df['Opportunity'], df['Challenge']]).value_counts().reset_index()
     skill_frequency.columns = ['Skill', 'Frequency']
     
-    st.write(f"Skills Analysis for '{chapter}':")
+    st.markdown(f"## Skills Analysis for '{chapter}'")
     st.write(skill_frequency)
     
     fig, ax = plt.subplots(figsize=(12, 8))
     sns.barplot(x='Frequency', y='Skill', data=skill_frequency, palette='Set2', ax=ax)
-    plt.title(f'Frequency of Skills for {chapter}')
-    plt.xlabel('Frequency')
-    plt.ylabel('Skill')
+    plt.title(f'Frequency of Skills for {chapter}', fontsize=16, color='black')
+    plt.xlabel('Frequency', fontsize=14, color='black')
+    plt.ylabel('Skill', fontsize=14, color='black')
     st.pyplot(fig)
 
 # Correlation Analysis
@@ -99,12 +130,12 @@ def correlation_analysis():
 
     correlation_matrix = df_filtered[['Test Score', 'Strength_encoded', 'Opportunity_encoded', 'Challenge_encoded']].corr()
 
-    st.write(f"Correlation matrix for '{chapter}':")
+    st.markdown(f"## Correlation Analysis for '{chapter}'")
     st.write(correlation_matrix)
     
-    fig, ax = plt.subplots(figsize=(8, 6))
+    fig, ax = plt.subplots(figsize=(10, 8))
     sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', vmin=-1, vmax=1, cbar=True, square=True, fmt=".2f", ax=ax)
-    plt.title(f"Correlation Heatmap for '{chapter}'")
+    plt.title(f"Correlation Heatmap for '{chapter}'", fontsize=16, color='black')
     st.pyplot(fig)
     
     column_encoded = f"{column}_encoded"
@@ -124,32 +155,32 @@ def chapter_statistics():
     avg_score = filtered_df['Test Score'].mean()
     num_entries = len(filtered_df)
     
-    st.write(f"**Statistics for {chapter}:**")
-    st.write(f"Average Test Score: {avg_score:.2f}")
-    st.write(f"Number of Entries: {num_entries}")
+    st.markdown(f"## Chapter Statistics for '{chapter}'")
+    st.write(f"**Average Test Score:** {avg_score:.2f}")
+    st.write(f"**Number of Entries:** {num_entries}")
     
-    # Plot score distribution by Strength
+    # Plot score distribution by Strength, Opportunity, and Challenge
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(18, 6))
     
     strength_scores = filtered_df.groupby('Strength')['Test Score'].mean()
     strength_scores.plot(kind='bar', ax=ax1, color='skyblue')
-    ax1.set_title('Score Distribution by Strength')
-    ax1.set_xlabel('Strength')
-    ax1.set_ylabel('Average Test Score')
+    ax1.set_title('Score Distribution by Strength', fontsize=14, color='black')
+    ax1.set_xlabel('Strength', fontsize=12, color='black')
+    ax1.set_ylabel('Average Test Score', fontsize=12, color='black')
     ax1.tick_params(axis='x', rotation=45)
     
     opportunity_scores = filtered_df.groupby('Opportunity')['Test Score'].mean()
     opportunity_scores.plot(kind='bar', ax=ax2, color='lightgreen')
-    ax2.set_title('Score Distribution by Opportunity')
-    ax2.set_xlabel('Opportunity')
-    ax2.set_ylabel('Average Test Score')
+    ax2.set_title('Score Distribution by Opportunity', fontsize=14, color='black')
+    ax2.set_xlabel('Opportunity', fontsize=12, color='black')
+    ax2.set_ylabel('Average Test Score', fontsize=12, color='black')
     ax2.tick_params(axis='x', rotation=45)
     
     challenge_scores = filtered_df.groupby('Challenge')['Test Score'].mean()
     challenge_scores.plot(kind='bar', ax=ax3, color='lightcoral')
-    ax3.set_title('Score Distribution by Challenge')
-    ax3.set_xlabel('Challenge')
-    ax3.set_ylabel('Average Test Score')
+    ax3.set_title('Score Distribution by Challenge', fontsize=14, color='black')
+    ax3.set_xlabel('Challenge', fontsize=12, color='black')
+    ax3.set_ylabel('Average Test Score', fontsize=12, color='black')
     ax3.tick_params(axis='x', rotation=45)
     
     plt.tight_layout()
@@ -166,12 +197,10 @@ def main():
     elif page == "Skills Analysis":
         st.title("Skills Analysis")
         skills_analysis()
-    elif page == "Correlation Analysis":
-        st.title("Correlation Analysis")
-        correlation_analysis()
     elif page == "Chapter Statistics":
         st.title("Chapter Statistics")
         chapter_statistics()
-
+)
+    
 if __name__ == "__main__":
     main()
