@@ -15,13 +15,11 @@ st.markdown("""
     .css-1aumxhk {font-family: 'Segoe UI';}
     .sidebar .sidebar-content {background-color: #F5B300;}
     .stButton>button {background-color: #6b9ac4; color: white; border-radius: 5px;}
-    .stSelectbox>div {font-family: 'Segoe UI'; font-size: 14px;}
     .css-1l02zno p {font-family: 'Segoe UI';}
     .css-2trqyj {background-color: #dbe4f0; border-radius: 10px;} /* Light blue background for boxes */
     </style>
 """, unsafe_allow_html=True)
-# Add name in the top-right corner
-st.markdown('<div class="top-right">Made with love</div>', unsafe_allow_html=True)
+
 # Initialize session state
 if 'df' not in st.session_state:
     st.session_state.df = pd.DataFrame()
