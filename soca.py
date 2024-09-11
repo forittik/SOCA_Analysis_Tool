@@ -15,7 +15,7 @@ st.markdown("""
         color: #999999;
     }
     .sidebar .sidebar-content {
-        background-color: #ffffff;
+        background-color: #fff111;
         color: #000000;
     }
     h1, h2, h3, h4 {
