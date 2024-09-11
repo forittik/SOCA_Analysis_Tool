@@ -168,8 +168,17 @@ def chapter_statistics():
 
     st.markdown("## 📚 **Chapter Statistics**")
     chapter = st.selectbox("Select Test Chapter", options=st.session_state.df['Test Chapter'].unique())
-
+    
     filtered_df = st.session_state.df[st.session_state.df['Test Chapter'] == chapter]
+    
+    # Debugging prints
+    st.write("Filtered DataFrame:")
+    st.write(filtered_df.head())
+    
+    if filtered_df.empty:
+        st.warning(f"No data available for chapter '{chapter}'.")
+        return
+    
     avg_score = filtered_df['Test Score'].mean()
     num_entries = len(filtered_df)
 
@@ -195,6 +204,7 @@ def chapter_statistics():
 
     plt.tight_layout()
     st.pyplot(fig)
+
 
 # Main app logic
 def main():
