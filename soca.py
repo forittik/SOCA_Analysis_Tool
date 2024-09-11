@@ -224,5 +224,5 @@ def main():
         st.title("📚 Chapter Statistics")
         chapter_statistics()
     
-if _name_ == "_main_":
+if __name__ == "_main_":
     main()
