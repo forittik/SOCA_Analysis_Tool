@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 # Set page config with a custom theme
 st.set_page_config(page_title="📊 Advanced Data Analysis App", layout="wide")
 
-# Custom CSS for advanced styling
+# Custom CSS for advanced styling with improved text visibility
 st.markdown("""
     <style>
     .main {
@@ -19,14 +19,18 @@ st.markdown("""
         color: #000000;
     }
     h1, h2, h3, h4 {
-        color: #333333;
+        color: #000000;
         font-family: 'Segoe UI';
     }
     .stButton>button {
-        background-color: #007bff; color: white; border-radius: 5px;
+        background-color: #007bff; color: #000000; border-radius: 5px;
     }
-    .stSelectbox>div {
-        font-family: 'Segoe UI'; font-size: 14px;
+    .stSelectbox>div>div>div {
+        font-family: 'Segoe UI'; 
+        font-size: 14px;
+        color: #000000;
+    }
+    .stSelectbox>div>div>div[data-baseweb="select"]>div {
         color: #000000;
     }
     .stMarkdown {
@@ -35,9 +39,25 @@ st.markdown("""
     .stPlot {
         background-color: #ffffff;
     }
+    .streamlit-expanderHeader {
+        color: #000000;
+    }
+    label.css-mkogse.e16fv1kl2 {
+        color: #000000;
+    }
+    .stTextInput>div>div>input {
+        color: #000000;
+    }
+    .stTextInput>label {
+        color: #000000;
+    }
+    .stRadio>div {
+        color: #000000;
+    }
     </style>
 """, unsafe_allow_html=True)
 
+# The rest of your code remains the same
 # Initialize session state
 if 'df' not in st.session_state:
     st.session_state.df = pd.DataFrame()
@@ -60,7 +80,7 @@ def handle_upload():
 # Performance Analysis
 def performance_analysis():
     if st.session_state.df.empty:
-        st.warning("⚠️ Please upload data first.")
+        st.warning("⚠ Please upload data first.")
         return
 
     chapter = st.selectbox("Select Test Chapter", options=st.session_state.df['Test Chapter'].unique())
@@ -91,7 +111,7 @@ def performance_analysis():
 # Skills Analysis
 def skills_analysis():
     if st.session_state.df.empty:
-        st.warning("⚠️ Please upload data first.")
+        st.warning("⚠ Please upload data first.")
         return
 
     chapter = st.selectbox("Select Test Chapter", options=st.session_state.df['Test Chapter'].unique())
@@ -115,7 +135,7 @@ def skills_analysis():
 # Correlation Analysis
 def correlation_analysis():
     if st.session_state.df.empty:
-        st.warning("⚠️ Please upload data first.")
+        st.warning("⚠ Please upload data first.")
         return
 
     chapter = st.selectbox("Select Test Chapter", options=st.session_state.df['Test Chapter'].unique())
@@ -146,7 +166,7 @@ def correlation_analysis():
 # Chapter Statistics
 def chapter_statistics():
     if st.session_state.df.empty:
-        st.warning("⚠️ Please upload data first.")
+        st.warning("⚠ Please upload data first.")
         return
 
     chapter = st.selectbox("Select Test Chapter", options=st.session_state.df['Test Chapter'].unique())
@@ -156,8 +176,8 @@ def chapter_statistics():
     num_entries = len(filtered_df)
     
     st.markdown(f"## 📚 Chapter Statistics for '{chapter}'")
-    st.write(f"**Average Test Score:** {avg_score:.2f}")
-    st.write(f"**Number of Entries:** {num_entries}")
+    st.write(f"Average Test Score: {avg_score:.2f}")
+    st.write(f"Number of Entries: {num_entries}")
     
     # Plot score distribution by Strength, Opportunity, and Challenge
     fig, (ax1, ax2, ax3) = plt.subplots(1, 3, figsize=(18, 6))
@@ -178,7 +198,7 @@ def chapter_statistics():
     
     challenge_scores = filtered_df.groupby('Challenge')['Test Score'].mean()
     challenge_scores.plot(kind='bar', ax=ax3, color='lightcoral')
-    ax3.set_title('🏋️ Score Distribution by Challenge', fontsize=14, color='black')
+    ax3.set_title('🏋 Score Distribution by Challenge', fontsize=14, color='black')
     ax3.set_xlabel('Challenge', fontsize=12, color='black')
     ax3.set_ylabel('Average Test Score', fontsize=12, color='black')
     ax3.tick_params(axis='x', rotation=45)
@@ -204,5 +224,5 @@ def main():
         st.title("📚 Chapter Statistics")
         chapter_statistics()
     
-if __name__ == "__main__":
+if _name_ == "_main_":
     main()
